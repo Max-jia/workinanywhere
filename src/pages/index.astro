@@ -1,0 +1,194 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { CATEGORIES, SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+
+const allPosts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+
+const latest = allPosts.slice(0, 6);
+const grouped = CATEGORIES.map(cat => ({
+  ...cat,
+  posts: allPosts.filter(p => p.data.category === cat.slug).slice(0, 4),
+})).filter(g => g.posts.length > 0);
+
+function fmtDate(d) { return d.toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric'}); }
+---
+
+<BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <p class="hero-label">&#x2708; &nbsp;&#x1F4BB; &nbsp;&#x1F30D;</p>
+      <h1 class="hero-title">Work Anywhere</h1>
+      <p class="hero-subtitle">Curated guides for digital nomads and remote workers. Cities, tools, jobs, and the lifestyle that comes with location independence.</p>
+      <nav class="pill-nav">
+        {CATEGORIES.map(cat => (
+          <a href={`/blog/category/${cat.slug}`} class="pill">{cat.label}</a>
+        ))}
+        <a href="/blog" class="pill pill-active">All articles</a>
+      </nav>
+    </section>
+
+    <!-- 橫幅長條卡：精選推薦 -->
+    <section class="banner-card">
+      <div class="banner-inner">
+        <div class="banner-text">
+          <span class="banner-tag">Featured</span>
+          <h2 class="banner-title">{latest[0].data.title}</h2>
+          <p class="banner-desc">{latest[0].data.description}</p>
+          <a href={`/blog/${latest[0].id}`} class="banner-link">Read guide &rarr;</a>
+        </div>
+        <div class="banner-visual">
+          {latest[0].data.heroImage && (
+            <Image src={latest[0].data.heroImage} alt="" width={500} height={300} />
+          )}
+          <div class="banner-accent"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest：不規則混合網格 -->
+    <section class="sec">
+      <header class="sec-head">
+        <h2 class="sec-title">Latest</h2>
+        <a href="/blog" class="sec-link">View all &rarr;</a>
+      </header>
+      <div class="irregular-grid">
+        {latest.slice(1, 4).map((p, i) => (
+          <a href={`/blog/${p.id}`} class:list={['irr-card', 'reveal', `irr-${i}`]}>
+            {p.data.heroImage && <div class="irr-img"><Image src={p.data.heroImage} alt="" width={400} height={250} /></div>}
+            <div class="irr-body">
+              <span class="irr-cat">{CATEGORIES.find(c=>c.slug===p.data.category)?.label}</span>
+              <h3 class="irr-title">{p.data.title}</h3>
+              <time class="irr-date">{fmtDate(p.data.pubDate)}</time>
+            </div>
+          </a>
+        ))}
+        {latest.slice(4, 6).map((p, i) => (
+          <a href={`/blog/${p.id}`} class="irr-card irr-small">
+            <div class="irr-body">
+              <span class="irr-cat">{CATEGORIES.find(c=>c.slug===p.data.category)?.label}</span>
+              <h3 class="irr-title">{p.data.title}</h3>
+              <time class="irr-date">{fmtDate(p.data.pubDate)}</time>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <!-- 分類區塊：撞色交錯卡片 -->
+    {grouped.map((group, gi) => (
+      <section class="sec">
+        <header class="sec-head">
+          <h2 class="sec-title">{group.label}</h2>
+          <a href={`/blog/category/${group.slug}`} class="sec-link">More &rarr;</a>
+        </header>
+        <div class="color-grid">
+          {group.posts.map((p, pi) => (
+            <a href={`/blog/${p.id}`} class="color-card reveal" style={`--accent: ${group.color}; --accent-light: ${group.color}18`}>
+              {p.data.heroImage && <div class="color-img"><Image src={p.data.heroImage} alt="" width={400} height={260} /></div>}
+              <div class="color-body">
+                <h3 class="color-title">{p.data.title}</h3>
+                <p class="color-desc">{p.data.description}</p>
+                <time class="color-date">{fmtDate(p.data.pubDate)}</time>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+    ))}
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p>Curated guides for digital nomads and remote workers. 58 articles on cities, tools, jobs, taxes, and the lifestyle that comes with location independence.</p>
+      <nav>
+        <a href="/about">About</a>
+        <a href="/blog">Articles</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/rss.xml">RSS</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 Work Anywhere</p>
+    </footer>
+  </main>
+</BaseLayout>
+
+<style>
+  main { max-width: 1280px; margin: 0 auto; padding: 0 2em 3em; }
+
+  /* === Hero === */
+  .hero { text-align: center; padding: 3.5em 0 2.5em; }
+  .hero-label { font-size: 1.8rem; margin-bottom: 1em; opacity: 0.4; letter-spacing: 0.3em; }
+  .hero-title { font-family: var(--font-heading); font-size: clamp(2.8rem,6vw,4.5rem); font-weight: 400; line-height: 1.04; margin-bottom: 0.45em; color: var(--color-text-heading); }
+  @media (prefers-color-scheme: dark) { .hero-title { color: var(--color-text-heading-dark); } }
+  .hero-subtitle { font-size: 1.05rem; color: var(--color-text-muted); max-width: 520px; margin: 0 auto 2em; line-height: 1.6; }
+
+  .pill-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.4em; }
+  .pill { font-size: 0.78rem; color: var(--color-text-heading); text-decoration: none; padding: 0.5em 1.2em; border: 1px solid var(--color-border); border-radius: 100px; transition: all 0.15s; }
+  .pill:hover { background: var(--color-text-heading); color: var(--color-bg); }
+  .pill-active { background: var(--color-text-heading); color: var(--color-bg); }
+  @media (prefers-color-scheme: dark) { .pill { color: var(--color-text-heading-dark); border-color: var(--color-border-dark); } .pill:hover, .pill-active { background: var(--color-text-heading-dark); color: var(--color-bg-dark); } }
+
+  /* === 橫幅長條卡 === */
+  .banner-card { margin: 2.5em 0; background: var(--color-text-heading); border-radius: 28px; overflow: hidden; }
+  @media (prefers-color-scheme: dark) { .banner-card { background: var(--color-surface-dark); } }
+  .banner-inner { display: grid; grid-template-columns: 1.2fr 1fr; min-height: 280px; }
+  .banner-text { padding: 2.5em 2.5em 2em; display: flex; flex-direction: column; justify-content: center; }
+  .banner-tag { display: inline-block; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-accent); font-weight: 600; margin-bottom: 0.8em; }
+  .banner-title { font-family: var(--font-heading); font-size: clamp(1.3rem,2vw,1.8rem); font-weight: 400; line-height: 1.15; color: #fff; margin-bottom: 0.4em; }
+  @media (prefers-color-scheme: dark) { .banner-title { color: var(--color-text-heading-dark); } }
+  .banner-desc { font-size: 0.9rem; color: rgba(255,255,255,0.65); line-height: 1.5; margin-bottom: 1.2em; max-width: 440px; }
+  .banner-link { font-size: 0.85rem; color: var(--color-accent); font-weight: 500; }
+  .banner-visual { position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+  .banner-visual img { width: 100%; height: 100%; object-fit: cover; opacity: 0.7; }
+  .banner-accent { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(196,107,74,0.3), transparent 60%); }
+  @media (max-width:700px) { .banner-inner { grid-template-columns: 1fr; } .banner-visual { display: none; } }
+
+  /* === Section === */
+  .sec { margin-bottom: 4em; }
+  .sec-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 1.2em; }
+  .sec-title { font-family: var(--font-heading); font-size: 1.5rem; font-weight: 400; color: var(--color-text-heading); margin: 0; }
+  .sec-link { font-size: 0.8rem; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.04em; }
+
+  /* === 不規則混合網格 === */
+  .irregular-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; grid-template-rows: auto auto; gap: 1em; }
+  .irr-0 { grid-row: span 2; }
+  .irr-card { background: var(--color-surface); border-radius: 20px; overflow: hidden; text-decoration: none; color: inherit; transition: transform 0.15s; display: flex; flex-direction: column; }
+  .irr-card:hover { transform: translateY(-2px); }
+  .irr-img img { width: 100%; aspect-ratio: 16/10; object-fit: cover; }
+  .irr-body { padding: 1em 1.2em 1.2em; }
+  .irr-cat { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-accent); font-weight: 600; }
+  .irr-title { font-family: var(--font-heading); font-size: 1rem; font-weight: 400; line-height: 1.2; color: var(--color-text-heading); margin: 0.3em 0; }
+  .irr-date { font-size: 0.75rem; color: var(--color-text-muted); }
+  .irr-small .irr-title { font-size: 0.9rem; }
+  @media (prefers-color-scheme: dark) { .irr-card { background: var(--color-surface-dark); } .irr-title { color: var(--color-text-heading-dark); } }
+  @media (max-width:800px) { .irregular-grid { grid-template-columns: 1fr 1fr; } .irr-0 { grid-row: span 1; } }
+  @media (max-width:500px) { .irregular-grid { grid-template-columns: 1fr; } }
+
+  /* === 撞色卡片網格 === */
+  .color-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 1em; }
+  .color-card { background: var(--accent-light); border-radius: 22px; overflow: hidden; text-decoration: none; color: inherit; transition: transform 0.15s; display: flex; flex-direction: column; }
+  .color-card:hover { transform: translateY(-2px); }
+  .color-card:nth-child(2) { background: var(--color-surface); }
+  .color-card:nth-child(3) { background: var(--accent-light); }
+  .color-card:nth-child(4) { background: var(--color-surface); }
+  .color-img img { width: 100%; aspect-ratio: 3/2; object-fit: cover; }
+  .color-body { padding: 1em 1.2em 1.2em; flex: 1; display: flex; flex-direction: column; }
+  .color-title { font-family: var(--font-heading); font-size: 0.95rem; font-weight: 400; line-height: 1.2; color: var(--color-text-heading); margin: 0 0 0.3em; }
+  .color-desc { font-size: 0.78rem; color: var(--color-text-muted); line-height: 1.4; flex: 1; display: -webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow: hidden; }
+  .color-date { font-size: 0.7rem; color: var(--color-text-muted); margin-top: 0.5em; }
+  @media (prefers-color-scheme: dark) { .color-title { color: var(--color-text-heading-dark); } }
+  @media (max-width:900px) { .color-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width:500px) { .color-grid { grid-template-columns: 1fr; } }
+
+  /* === Footer === */
+  .site-footer { max-width: 600px; margin: 4em auto 1em; text-align: center; }
+  .site-footer p { font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.6; margin: 0 0 0.8em; }
+  .site-footer nav { display: flex; justify-content: center; gap: 1.5em; margin-bottom: 0.5em; }
+  .site-footer nav a { font-size: 0.82rem; color: var(--color-text-muted); }
+  .footer-copy { font-size: 0.75rem; opacity: 0.5; }
+
+  @media (max-width:600px) { main { padding: 0 1em 2em; } .hero { padding: 2em 0 1.5em; } .hero-title { font-size: clamp(1.8rem,8vw,2.5rem); } .banner-text { padding: 1.5em; } .sec { margin-bottom: 2.5em; } }
+</style>

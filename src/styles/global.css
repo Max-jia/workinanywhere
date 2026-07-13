@@ -1,0 +1,213 @@
+/*
+  Work Anywhere — 設計系統 v3
+  靈感：Ditto + iamsteve — 暖鼠尾草綠背景 + 全寬區塊 + 變奏排列
+  色彩：鼠尾草綠背景 + 深海軍灰字 + 單一藍灰點綴
+  動畫：arc-animations (pure CSS)
+*/
+
+/* === Scroll Reveal + Micro-interactions === */
+.reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.5s ease, transform 0.5s ease; }
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+.reveal:nth-child(1) { transition-delay: 0s; }
+.reveal:nth-child(2) { transition-delay: 0.05s; }
+.reveal:nth-child(3) { transition-delay: 0.1s; }
+.reveal:nth-child(4) { transition-delay: 0.15s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
+
+:root {
+  /* === 主色調 === */
+  /* === 主色調 === */
+  --color-bg: #EFF2E5;              /* 暖鼠尾草綠 */
+  --color-surface: #E5E9D9;         /* 微深表面色 */
+  --color-border: #D5DACE;          /* 邊框 */
+  /* Taste Skill: tinted shadows matching bg hue */
+  --shadow-card: 0 1px 3px rgba(100,110,90,0.08), 0 4px 12px rgba(100,110,90,0.05);
+  --shadow-card-hover: 0 2px 6px rgba(100,110,90,0.10), 0 8px 24px rgba(100,110,90,0.06), 0 0 0 1px var(--color-accent);
+  /* MagicUI-inspired: subtle glow */
+  --glow-accent: 0 0 20px rgba(91,127,165,0.15);
+
+  /* === 文字色 === */
+  --color-text-heading: #1E2522;    /* 標題 — 深青炭灰（非純黑，有微妙的綠調） */
+  --color-text-body: #2D3633;       /* 內文 — 比標題稍淡 */
+  --color-text-muted: #7A827E;      /* 次要文字 — 日期、輔助資訊 */
+
+  /* === 強調色 === */
+  --color-accent: #5B7FA5;          /* 藍灰 — 唯一的點綴色，用在連結底線和引用框 */
+  --color-accent-hover: #4A6B8E;    /* 懸停時加深 */
+
+  /* === 佈局 === */
+  --max-width: 650px;               /* 文章最佳閱讀寬度（比之前稍窄，更像雜誌） */
+  --max-width-wide: 960px;          /* 首頁等較寬的佈局 */
+
+  /* === 圓角 === */
+  --radius: 6px;
+  --radius-lg: 12px;
+
+  /* === 深色模式 === */
+  --color-bg-dark: #1A1F1D;
+  --color-surface-dark: #252B28;
+  --color-border-dark: #3A4240;
+  --color-text-heading-dark: #E0DDD8;
+  --color-text-body-dark: #C4C0BA;
+  --color-text-muted-dark: #8A8580;
+}
+
+/* === 基礎重置 === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  background-color: var(--color-bg);
+  color: var(--color-text-body);
+  font-size: 16px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+/* === 排版 === */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  margin: 0 0 0.5rem 0;
+  color: var(--color-text-heading);
+  line-height: 1.1;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+h1 { font-size: clamp(2rem, 5vw, 3rem); letter-spacing: -0.02em; }
+h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); letter-spacing: -0.015em; }
+h3 { font-size: 1.2rem; font-weight: 500; }
+h4 { font-size: 1.05rem; font-weight: 500; }
+
+/* === 段落 === */
+p { margin-bottom: 1.2em; text-wrap: pretty; }
+
+/* === 連結 === */
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--color-accent);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.15s ease;
+}
+a:hover {
+  text-decoration-color: var(--color-accent-hover);
+}
+
+/* === 圖片 === */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  display: block;
+}
+
+/* === 引用 === */
+blockquote {
+  border-left: 2px solid var(--color-accent);
+  padding: 0 0 0 16px;
+  margin: 1.5em 0;
+  color: var(--color-text-muted);
+  font-style: normal;
+  background: none;
+  border-radius: 0;
+}
+
+/* === 分隔線 === */
+hr {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: 2em 0;
+}
+
+/* === 程式碼 === */
+code {
+  padding: 2px 6px;
+  background-color: var(--color-surface);
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+}
+
+/* === 表格 === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  font-size: 0.9em;
+}
+th, td {
+  padding: 0.6em 0.8em;
+  border-bottom: 1px solid var(--color-border);
+  text-align: left;
+}
+th {
+  font-weight: 600;
+  color: var(--color-text-heading);
+  font-family: var(--font-heading);
+}
+
+/* === 列表 === */
+ul, ol {
+  padding-left: 1.2em;
+  margin-bottom: 1.2em;
+}
+li {
+  margin-bottom: 0.4em;
+}
+
+/* === 無障礙：螢幕閱讀器專用 === */
+.sr-only {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* === 手機適配 === */
+@media (max-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+  h1 { font-size: clamp(1.6rem, 6vw, 2.2rem); }
+  h2 { font-size: clamp(1.3rem, 5vw, 1.6rem); }
+}
+
+/* === 深色模式 === */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-body-dark);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--color-text-heading-dark);
+  }
+  code {
+    background-color: var(--color-surface-dark);
+  }
+  table th {
+    color: var(--color-text-heading-dark);
+  }
+  blockquote {
+    color: var(--color-text-muted-dark);
+  }
+}

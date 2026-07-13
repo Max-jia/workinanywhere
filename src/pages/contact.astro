@@ -1,0 +1,53 @@
+---
+// 聯絡頁面
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Contact — Work Anywhere"
+  description="Get in touch with Work Anywhere."
+>
+  <main>
+    <h1>Contact</h1>
+
+    <p>
+      Have a question, suggestion, or just want to say hi? We'd love to hear from you.
+    </p>
+
+    <h2>Email</h2>
+    <p>
+      The best way to reach us: <a href="mailto:hello@workinanywhere.com">hello@workinanywhere.com</a>
+    </p>
+
+    <h2>Contribute</h2>
+    <p>
+      Are you a remote worker or digital nomad with insights to share? We welcome guest contributions.
+      Send us an email with your topic idea and a brief outline, and we'll get back to you.
+    </p>
+  </main>
+</BaseLayout>
+
+<style>
+  main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 2em 1.5em 4em;
+  }
+
+  h1 {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    margin-bottom: 1em;
+  }
+
+  h2 {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    margin-top: 2em;
+  }
+
+  em {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+  }
+</style>

@@ -1,0 +1,71 @@
+---
+// 每個頁面共用的 HTML <head> 設定
+// 包含：字型、SEO 標籤、社群分享預覽、RSS
+
+import '../styles/global.css';
+import { SITE_TITLE } from '../consts';
+import { Font } from 'astro:assets';
+
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+}
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const { title, description, image } = Astro.props;
+
+// 社群分享時顯示的圖片，如果文章沒有圖就用網站首頁截圖
+const ogImage = image
+  ? new URL(image, Astro.site).toString()
+  : new URL('og-default.png', Astro.site).toString();
+---
+
+<!-- 字型預載（加快載入速度） -->
+<Font cssVariable="--font-heading" preload />
+<Font cssVariable="--font-body" preload />
+
+<!-- 基礎設定 -->
+<meta charset="utf-8" />
+<meta name="google-site-verification" content="8DZ79b_L9tXF0nm_-YDnyhT2hZHKUYeWhxlUp7XJQyQ" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+<!-- Google AdSense Auto Ads -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7649257223930816" crossorigin="anonymous"></script>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" href="/favicon.ico" />
+<link rel="sitemap" href="/sitemap-index.xml" />
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  title={SITE_TITLE}
+  href={new URL('rss.xml', Astro.site)}
+/>
+<meta name="generator" content={Astro.generator} />
+
+<!-- 結構化資料：網站資訊 -->
+<script type="application/ld+json" set:html={JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: SITE_TITLE,
+  url: Astro.site.toString(),
+  description: 'Curated guides for digital nomads and remote workers — cities, tools, jobs, and lifestyle.',
+})}>
+</script>
+
+<!-- 標準網址（防止重複內容被 Google 扣分） -->
+<link rel="canonical" href={canonicalURL} />
+
+<!-- 頁面標題和描述（Google 搜尋結果顯示的） -->
+<title>{title}</title>
+<meta name="description" content={description} />
+
+<!-- Facebook / LinkedIn 分享時顯示的預覽 -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content={Astro.url} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={ogImage} />
+
+<!-- Twitter 分享時顯示的預覽 -->
+<meta name="twitter:card" content="summary_large_image" />

@@ -1,0 +1,88 @@
+---
+// 網站頂部導覽列 — 極簡風格：透明背景 + 純文字連結
+import { NAV_LINKS, SITE_TITLE } from '../consts';
+---
+
+<header>
+  <nav>
+    <a href="/" class="logo">
+      <span class="logo-text">{SITE_TITLE}</span>
+    </a>
+    <div class="nav-links">
+      {NAV_LINKS.map((link) => (
+        <a
+          href={link.href}
+          class:list={[Astro.url.pathname === link.href ? 'current' : '']}
+        >
+          {link.label}
+        </a>
+      ))}
+    </div>
+  </nav>
+</header>
+
+<style>
+  header {
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    header {
+      border-bottom-color: var(--color-border-dark);
+    }
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: var(--max-width-wide);
+    margin: 0 auto;
+    padding: 0 1.5em;
+    height: 56px;
+  }
+
+  .logo {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-text-heading);
+    text-decoration: none;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .logo { color: var(--color-text-heading-dark); }
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 1.5em;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  .nav-links a:hover,
+  .nav-links a.current {
+    color: var(--color-text-heading);
+    text-decoration: underline;
+    text-decoration-color: var(--color-accent);
+    text-underline-offset: 4px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .nav-links a { color: var(--color-text-muted-dark); }
+    .nav-links a:hover,
+    .nav-links a.current { color: var(--color-text-heading-dark); }
+  }
+
+  @media (max-width: 600px) {
+    nav { padding: 0 1em; }
+    .nav-links { gap: 1em; }
+    .nav-links a { font-size: 0.8rem; }
+  }
+</style>

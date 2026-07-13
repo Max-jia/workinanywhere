@@ -1,0 +1,81 @@
+---
+// 關於頁面 — 介紹這個網站和經營者
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="About — Work Anywhere"
+  description="Learn about Work Anywhere — your guide to remote work, digital nomad lifestyle, and location-independent living."
+>
+  <main>
+    <h1>About Work Anywhere</h1>
+
+    <p>
+      <strong>Work Anywhere</strong> is a curated resource for anyone who wants to work from anywhere.
+    </p>
+
+    <p>
+      Whether you're a seasoned digital nomad bouncing between coworking spaces in Bali
+      and Lisbon, or you're just starting to explore the idea of remote work — this site
+      is built for you.
+    </p>
+
+    <h2>What You'll Find Here</h2>
+
+    <ul>
+      <li><strong>City Guides</strong> — Honest breakdowns of the best (and most overrated) remote work destinations. Cost of living, internet speed, visa info, and real community vibes.</li>
+      <li><strong>Tool Reviews</strong> — Side-by-side comparisons of the software and gear that make remote work possible.</li>
+      <li><strong>Job Hunting</strong> — Where to find legitimate remote jobs, how to stand out, and which platforms are worth your time.</li>
+      <li><strong>Lifestyle</strong> — Productivity, mental health, community building, and the stuff nobody tells you about location-independent living.</li>
+      <li><strong>Finance & Taxes</strong> — Banking across borders, digital nomad taxes, and managing money when your "home" changes every few months.</li>
+    </ul>
+
+    <h2>Why This Site Exists</h2>
+
+    <p>
+      The internet is full of generic "top 10 digital nomad cities" listicles written by people
+      who've never set foot in those places. We do the research, talk to real nomads, and
+      compile information you can actually use to make decisions.
+    </p>
+
+    <p>
+      No fluff. No AI-generated filler. Just useful, well-researched guides for people who
+      want to build a life that isn't tied to a single zip code.
+    </p>
+
+    <h2>Contact</h2>
+
+    <p>
+      Have a question, suggestion, or want to contribute? <a href="/contact">Get in touch</a>.
+    </p>
+  </main>
+</BaseLayout>
+
+<style>
+  main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 2em 1.5em 4em;
+  }
+
+  h1 {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    margin-bottom: 1em;
+  }
+
+  h2 {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    margin-top: 2em;
+  }
+
+  ul {
+    padding-left: 1.2em;
+  }
+
+  li {
+    margin-bottom: 0.6em;
+    line-height: 1.6;
+  }
+</style>

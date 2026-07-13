@@ -1,0 +1,125 @@
+---
+// 文章頁面佈局 — iamsteve 風格：只有標題+日期，極簡
+import type { CollectionEntry } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import RevealScript from '../components/RevealScript.astro';
+
+type Props = CollectionEntry<'blog'>['data'];
+const { title, description, pubDate, updatedDate, category, heroImage } = Astro.props;
+
+const formattedDate = pubDate.toLocaleDateString('en-US', {
+  year: 'numeric', month: 'long', day: 'numeric',
+});
+
+const postUrl = new URL(Astro.url.pathname, Astro.site).toString();
+
+const articleSchema = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: description,
+  datePublished: pubDate.toISOString(),
+  dateModified: (updatedDate || pubDate).toISOString(),
+  url: postUrl,
+  author: { '@type': 'Organization', name: 'Work Anywhere' },
+  publisher: { '@type': 'Organization', name: 'Work Anywhere', logo: { '@type': 'ImageObject', url: new URL('favicon.svg', Astro.site).toString() } },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': postUrl },
+});
+
+const breadcrumbSchema = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: Astro.site.toString() },
+    { '@type': 'ListItem', position: 2, name: 'Articles', item: new URL('blog', Astro.site).toString() },
+    { '@type': 'ListItem', position: 3, name: title },
+  ],
+});
+---
+
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} />
+    <script type="application/ld+json" set:html={articleSchema}></script>
+    <script type="application/ld+json" set:html={breadcrumbSchema}></script>
+    <style>
+      .prose {
+        max-width: var(--max-width);
+        margin: auto;
+        padding: 1em 0;
+      }
+      .prose :where(h2, h3, h4) { margin-top: 2em; }
+      .prose :where(h2, h3, h4):first-child { margin-top: 0; }
+      .prose img {
+        border-radius: var(--radius-lg);
+        margin: 2em 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <Header />
+    <main>
+      <article>
+        <header class="article-header">
+          <h1 class="article-title">{title}</h1>
+          <time class="article-date" datetime={pubDate.toISOString()}>
+            {formattedDate}
+            {updatedDate && ` (Updated ${updatedDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })})`}
+          </time>
+        </header>
+        <div class="prose">
+          <slot />
+        </div>
+      </article>
+      <nav class="back-link">
+        <a href="/blog">← Back</a>
+      </nav>
+    </main>
+    <Footer />
+    <RevealScript />
+  </body>
+</html>
+
+<style>
+  main {
+    max-width: var(--max-width-wide);
+    margin: 0 auto;
+    padding: 2em 1.5em 4em;
+  }
+
+  .article-header {
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .article-header { border-bottom-color: var(--color-border-dark); }
+  }
+
+  .article-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 5.5vw, 3.2rem);
+    font-weight: 400;
+    line-height: 1.06;
+    margin: 0 0 0.25em;
+    color: var(--color-text-heading);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .article-title { color: var(--color-text-heading-dark); }
+  }
+
+  .article-date {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+  }
+
+  .back-link {
+    margin-top: 3em;
+    font-size: 0.85rem;
+  }
+</style>

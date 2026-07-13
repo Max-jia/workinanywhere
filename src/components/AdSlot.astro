@@ -1,0 +1,51 @@
+---
+// 廣告位元件 — 預留 Google AdSense 的位置
+// 目前顯示一個佔位區塊，等申請到 AdSense 後，把 data-ad-* 屬性換成真實的
+
+interface Props {
+  /** 廣告位置：'article'（文章內）| 'sidebar'（側欄）| 'footer'（頁尾） */
+  slot?: 'article' | 'sidebar' | 'footer';
+}
+
+const { slot = 'article' } = Astro.props;
+---
+
+<!--
+  當你申請好 Google AdSense 後，把下面的 div 換成 AdSense 提供的程式碼即可。
+  AdSense 會給一段像這樣的程式碼：
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXX" data-ad-slot="1234567890" data-ad-format="auto"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+-->
+<div class="ad-container" data-ad-slot={slot}>
+  <span class="ad-label">Advertisement</span>
+</div>
+
+<style>
+  .ad-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 120px;
+    background: var(--color-surface);
+    border: 1px dashed var(--color-border);
+    border-radius: var(--radius);
+    margin: 2em 0;
+    position: relative;
+  }
+
+  .ad-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-text-muted);
+    position: absolute;
+    top: 0.5em;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .ad-container {
+      background: var(--color-surface-dark);
+      border-color: var(--color-border-dark);
+    }
+  }
+</style>

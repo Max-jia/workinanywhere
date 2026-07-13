@@ -1,0 +1,71 @@
+---
+// 隱私政策頁面 — AdSense 要求必須有
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Privacy Policy — Remote Work Compass"
+  description="Privacy Policy for Remote Work Compass"
+>
+  <main>
+    <h1>Privacy Policy</h1>
+
+    <p><em>Last updated: July 6, 2026</em></p>
+
+    <h2>1. Information We Collect</h2>
+
+    <p>
+      We do not directly collect personal information. However, third-party services used on this site may collect data:
+    </p>
+    <ul>
+      <li><strong>Google AdSense</strong> — Uses cookies to serve personalized ads based on your browsing history. Learn more at <a href="https://policies.google.com/technologies/ads">Google's Advertising Policies</a>.</li>
+      <li><strong>Analytics</strong> — We may use privacy-focused analytics to understand how visitors use this site (page views, time on page). No personal data is collected.</li>
+    </ul>
+
+    <h2>2. Cookies</h2>
+
+    <p>
+      Third-party vendors, including Google, use cookies to serve ads based on your prior visits to this website or other websites. You can opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads">Google Ads Settings</a>.
+    </p>
+
+    <h2>3. Links to Other Websites</h2>
+
+    <p>
+      Our articles may contain links to external sites. We are not responsible for the privacy practices or content of those sites.
+    </p>
+
+    <h2>4. Contact</h2>
+
+    <p>
+      If you have questions about this privacy policy, please <a href="/contact">contact us</a>.
+    </p>
+  </main>
+</BaseLayout>
+
+<style>
+  main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 2em 1.5em 4em;
+  }
+
+  h1 {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    margin-bottom: 0.5em;
+  }
+
+  h2 {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    margin-top: 2em;
+  }
+
+  ul {
+    padding-left: 1.2em;
+  }
+
+  li {
+    margin-bottom: 0.5em;
+  }
+</style>

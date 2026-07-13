@@ -1,0 +1,83 @@
+---
+import { getCollection } from 'astro:content';
+import ArticleCard from '../../components/ArticleCard.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { CATEGORIES, SITE_DESCRIPTION } from '../../consts';
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+---
+
+<BaseLayout title="All Articles" description={SITE_DESCRIPTION}>
+  <main>
+    <h1 class="page-title">Articles</h1>
+
+    <nav class="page-nav">
+      {CATEGORIES.map((cat) => (
+        <a href={`/blog/category/${cat.slug}`}>{cat.label}</a>
+      ))}
+    </nav>
+
+    <div class="grid-2col">
+      {posts.map((post) => (
+        <ArticleCard
+          title={post.data.title}
+          description={post.data.description}
+          pubDate={post.data.pubDate}
+          category={post.data.category}
+          href={`/blog/${post.id}`}
+          heroImage={post.data.heroImage}
+        />
+      ))}
+    </div>
+  </main>
+</BaseLayout>
+
+<style>
+  main {
+    max-width: var(--max-width-wide);
+    margin: 0 auto;
+    padding: 3em 1.5em 4em;
+  }
+
+  .page-title {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+  }
+
+  .page-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25em 1.2em;
+    padding-bottom: 1.5em;
+    margin-bottom: 2em;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .page-nav a {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .page-nav a:hover { color: var(--color-text-heading); }
+
+  @media (prefers-color-scheme: dark) {
+    .page-nav { border-color: var(--color-border-dark); }
+  }
+
+  .grid-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5em;
+  }
+
+  @media (max-width: 700px) {
+    .grid-2col { grid-template-columns: 1fr; }
+  }
+</style>
