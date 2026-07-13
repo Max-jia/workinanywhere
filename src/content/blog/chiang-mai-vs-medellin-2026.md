@@ -3,7 +3,7 @@ title: 'Chiang Mai vs Medellín (2026): Which Digital Nomad Hub Should You Choos
 description: 'I have lived in both. Here is the honest comparison nobody writes — cost, weather, community, visas, and which city you will actually be happier in.'
 pubDate: 2026-04-14
 category: city-guides
-heroImage: ../../assets/city-bangkok.jpg
+heroImage: ../../assets/city-london.jpg
 ---
 
 I've lived in both. They're the two most recommended mid-budget nomad cities on the planet, and for good reason. Both offer excellent value, thriving communities, and a quality of life that makes your friends back home jealous.

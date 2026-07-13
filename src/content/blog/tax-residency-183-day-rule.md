@@ -3,7 +3,7 @@ title: 'The 183-Day Rule Is a Trap. Here Is How Tax Residency Actually Works in 
 description: 'Every nomad guide tells you to stay under 183 days. None of them mention that Portugal uses a rolling window, Spain counts calendar years, and the US uses a weighted three-year formula. Here is what actually matters.'
 pubDate: 2026-07-07
 category: finance
-heroImage: ../../assets/passport-visa.jpg
+heroImage: ../../assets/tax-legal-documents.jpg
 ---
 
 "Just stay under 183 days in any country and you won't owe tax anywhere."

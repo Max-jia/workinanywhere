@@ -3,7 +3,7 @@ title: 'AI Just Hit 16% of Freelance Tasks. Here Is What That Actually Means for
 description: 'The Remote Labor Index hit a record. Fable 5 can now complete 1 in 6 freelance projects at professional quality. Writing jobs are down 30%. Graphic design is down 17%. The mid-tier freelance market is collapsing. A different kind of work is growing.'
 pubDate: 2026-07-12
 category: jobs
-heroImage: ../../assets/remote-work-office.jpg
+heroImage: ../../assets/ai-technology-screen.jpg
 ---
 
 Eight months ago, the best AI system could complete 2.5% of real freelance tasks at professional quality. Today, that number is 16.1%. The Remote Labor Index, which tracks AI performance on actual freelance projects, has more than quadrupled since late 2025.

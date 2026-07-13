@@ -3,7 +3,7 @@ title: 'Long-Distance Relationships as a Digital Nomad (2026): What Actually Wor
 description: 'Practical advice for maintaining a relationship when you''re constantly traveling — communication rhythms, conflict repair, and the conversation you need to have early.'
 pubDate: 2026-06-08
 category: lifestyle
-heroImage: ../../assets/couple-distance.jpg
+heroImage: ../../assets/couple-phones.jpg
 ---
 
 Long-distance relationships are hard. Long-distance relationships where one person is constantly moving — to different time zones, with unreliable WiFi, surrounded by new people and experiences — are harder.

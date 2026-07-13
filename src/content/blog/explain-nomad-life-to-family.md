@@ -3,7 +3,7 @@ title: 'So You Told Your Parents You Are Becoming a Digital Nomad. Now What?'
 description: '"But when will you get a real job?" "Are you running away from something?" "How do you even make money?" Here is how to have the conversations that actually help your family understand.'
 pubDate: 2026-07-10
 category: lifestyle
-heroImage: ../../assets/people-group.jpg
+heroImage: ../../assets/family-together.jpg
 ---
 
 Telling your family you are becoming a digital nomad is surprisingly difficult. Not because they are unsupportive. Because they do not have a mental model for what you are doing.

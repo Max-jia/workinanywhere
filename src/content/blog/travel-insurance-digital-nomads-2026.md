@@ -3,7 +3,7 @@ title: 'SafetyWing vs World Nomads vs Genki (2026): Best Nomad Insurance Compare
 description: 'An evidence-based comparison of the three most popular digital nomad insurance plans — coverage, pricing, claims experience, and which one fits your situation.'
 pubDate: 2026-05-04
 category: tools
-heroImage: ../../assets/insurance-doc.jpg
+heroImage: ../../assets/insurance-documents.jpg
 ---
 
 Travel insurance for digital nomads is not the same as vacation insurance. You're not going on a two-week trip — you're living abroad. You need coverage that works across multiple countries, handles ongoing health issues, and doesn't expire while you're still traveling.

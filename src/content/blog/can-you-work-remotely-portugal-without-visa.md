@@ -3,7 +3,7 @@ title: 'Can I Work Remotely From Portugal Without a Visa? The Answer Changes Aft
 description: 'You can work from Portugal for up to 90 days as a tourist. After that, you need a visa. Here is what happens if you stay longer, what the D8 visa actually requires, and how to not get into trouble.'
 pubDate: 2026-07-10
 category: finance
-heroImage: ../../assets/city-europe.jpg
+heroImage: ../../assets/lisbon-city.jpg
 ---
 
 You land in Lisbon with a US passport. You have a remote job with a company in California. You book an Airbnb for two weeks, fall in love with the city, and start wondering if you can just... stay.

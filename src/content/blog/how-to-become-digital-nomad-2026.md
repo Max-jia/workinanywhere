@@ -3,7 +3,7 @@ title: 'How to Become a Digital Nomad in 2026 (Without Quitting Your Job Tomorro
 description: '43 million people are doing it. Most of them did not quit their job on a whim. The actual path — from negotiating remote work to picking your first city to figuring out the money.'
 pubDate: 2026-07-08
 category: lifestyle
-heroImage: ../../assets/remote-laptop.jpg
+heroImage: ../../assets/remote-worker-outdoor.jpg
 ---
 
 The fantasy version of becoming a digital nomad goes like this: quit your job, buy a one-way ticket, figure it out as you go.

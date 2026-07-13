@@ -3,7 +3,7 @@ title: 'How to Negotiate a Remote Work Agreement (2026 Tactics That Still Work)'
 description: 'A practical playbook for convincing your employer to let you work remotely — what works in 2026, what stopped working, and how to frame the conversation.'
 pubDate: 2026-06-23
 category: jobs
-heroImage: ../../assets/people-cafe.jpg
+heroImage: ../../assets/paperwork-desk.jpg
 ---
 
 You want to keep your job but work from somewhere else. Maybe you've already been working remotely and your company is pushing "return to office." Or maybe you're in-office and want to propose a change.

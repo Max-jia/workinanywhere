@@ -3,7 +3,7 @@ title: 'I Have Been a Digital Nomad for Two Years. Here Is What Nobody Warned Me
 description: '35 percent of nomads missed a wedding or a birth. 29 percent report increased mental stress. Only 11 percent actually save more money. The Instagram version of this life leaves out the parts that matter.'
 pubDate: 2026-07-09
 category: lifestyle
-heroImage: ../../assets/remote-desk.jpg
+heroImage: ../../assets/person-thinking.jpg
 ---
 
 The Instagram version of digital nomad life is a laptop on a beach, a coconut, and a caption about freedom. The bunq Global Living Report — a survey of 7,100 people across eight countries, published in May 2026 — tells a different story.

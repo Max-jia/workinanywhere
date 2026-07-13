@@ -3,7 +3,7 @@ title: 'Three Digital Nomad Tax Mistakes That Cost People Everything (And How to
 description: 'Real stories from nomads who got it wrong — the $14,000 surprise, the frozen bank account, and the "I thought I did not owe anything" nightmare. None of this is tax advice. All of it is what actually happens.'
 pubDate: 2026-07-07
 category: finance
-heroImage: ../../assets/finance-coins.jpg
+heroImage: ../../assets/person-stressed.jpg
 ---
 
 I have spent enough time in nomad communities to notice a pattern: nobody talks about tax problems. They talk about the beach, the coworking space, the visa they just got approved for. Nobody posts on Instagram about the letter from the IRS.

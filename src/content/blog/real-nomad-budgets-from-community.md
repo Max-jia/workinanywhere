@@ -3,7 +3,7 @@ title: 'I Asked 50 Digital Nomads How Much They Actually Spend. The Answers Surp
 description: 'Forget the generic budget templates. Real nomads across 12 countries shared what they actually spent last month — including the things nobody puts in their Instagram breakdown.'
 pubDate: 2026-07-09
 category: lifestyle
-heroImage: ../../assets/travel-airport.jpg
+heroImage: ../../assets/finance-workspace.jpg
 ---
 
 The internet is full of digital nomad budget guides. Most of them are theoretical — "here is what you could spend if you lived in Chiang Mai and ate street food for every meal." Real people do not live like that.

@@ -3,7 +3,7 @@ title: 'Can I Use My US Credit Card in Thailand? Yes, But Do These Three Things 
 description: 'The short answer is yes, your US cards work in Thailand. But if you do not set them up right, you will pay hidden fees on every purchase and your bank might freeze your account on day two.'
 pubDate: 2026-07-09
 category: finance
-heroImage: ../../assets/travel-globe.jpg
+heroImage: ../../assets/bank-card-closeup.jpg
 ---
 
 Yes, your US credit card works in Thailand. Visa and Mastercard are accepted at hotels, malls, supermarkets, and larger restaurants. You will still need cash for street food, songthaews, markets, and the motorbike taxi that takes you home at 2am. But your card works.

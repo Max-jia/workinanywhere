@@ -3,7 +3,7 @@ title: 'I Found an Apartment in Medellin Without Speaking Spanish. Here Is Exact
 description: 'No Spanish, no local contacts, no idea where to start. I rented a furnished apartment in Laureles in six days for $600 a month. The system that worked.'
 pubDate: 2026-07-07
 category: city-guides
-heroImage: ../../assets/city-medellin.jpg
+heroImage: ../../assets/colombia-city.jpg
 ---
 
 I arrived in Medellin with about forty words of Spanish. I could say hello, thank you, and "where is the bathroom." I needed to find a furnished apartment in a safe neighborhood within a week.

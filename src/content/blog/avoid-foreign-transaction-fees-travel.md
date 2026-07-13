@@ -3,7 +3,7 @@ title: 'The Foreign Transaction Fee Trick Your Bank Hopes You Never Notice'
 description: 'Your bank charges you 3 percent on every purchase abroad and buries it in the exchange rate. Stop paying it. Set up the right cards. Save hundreds of dollars a year.'
 pubDate: 2026-07-08
 category: finance
-heroImage: ../../assets/finance-desk.jpg
+heroImage: ../../assets/finance-atm-card.jpg
 ---
 
 I did the math on my first year as a nomad. I spent about $24,000 abroad, mostly on a standard US debit card. The foreign transaction fees, ATM surcharges, and hidden exchange rate markups cost me roughly $720. That is a round-trip flight to Tokyo. I paid it to my bank for the privilege of accessing my own money.

@@ -3,7 +3,7 @@ title: 'The Hidden Cost of Being a Digital Nomad in 2026 (It Is Not What You Thi
 description: 'Only 11 percent of nomads actually save more money. Here is where the money really goes — the visa fees, the equipment failures, the social spending that is not optional — and how to budget for what actually happens.'
 pubDate: 2026-07-09
 category: finance
-heroImage: ../../assets/travel-backpack.jpg
+heroImage: ../../assets/budget-notebook.jpg
 ---
 
 Only 11% of digital nomads say they have more money left over each month compared to their previous life. That number comes from the bunq Global Living Report, which surveyed 7,100 people across eight countries. It is the single most sobering statistic in the nomad economy.
