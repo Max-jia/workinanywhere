@@ -3,7 +3,7 @@ title: 'How to Stay Fit and Healthy as a Digital Nomad (2026 Guide)'
 description: 'Practical strategies for maintaining fitness, eating well, and managing health while constantly moving — bodyweight workouts, nutrition anchors, and how to find a doctor abroad.'
 pubDate: 2026-06-03
 category: lifestyle
-heroImage: ../../assets/health-fitness.jpg
+heroImage: ../../assets/health-yoga.jpg
 ---
 
 Staying healthy as a digital nomad is harder than it looks. Your gym, your grocery store, your doctor, and your routine all reset every time you move. The habits that kept you healthy at home don't automatically survive the lifestyle.

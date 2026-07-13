@@ -3,7 +3,7 @@ title: 'JPMorgan Told Employees to Quit If They Did Not Like the Office. Now The
 description: 'The World Cup did what no amount of employee feedback could. JPMorgan and Goldman Sachs, the two most aggressive return-to-office enforcers on Wall Street, are quietly letting people work remotely on match days.'
 pubDate: 2026-07-11
 category: jobs
-heroImage: ../../assets/people-meeting.jpg
+heroImage: ../../assets/people-meeting2.jpg
 ---
 
 Jamie Dimon spent two years telling employees that remote work was not a negotiation. "If you don't like it, quit." Goldman Sachs CEO David Solomon called remote work an "aberration." Both banks spent 2024 and 2025 tracking badge swipes, sending return-to-office memos, and making it clear that the flexibility of 2020 was over.

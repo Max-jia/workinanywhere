@@ -3,7 +3,7 @@ title: 'Wise vs Revolut for Digital Nomads (2026): Which Saves You More?'
 description: 'A practical comparison of Wise, Revolut, and traditional banks for remote workers who earn in one currency and spend in another — with real fee breakdowns.'
 pubDate: 2026-04-22
 category: finance
-heroImage: ../../assets/city-london.jpg
+heroImage: ../../assets/work-from-anywhere.jpg
 ---
 
 If you earn in one currency and spend in another, your choice of bank account directly impacts how much money you lose to fees. A freelancer earning USD while living in Thailand can easily lose $500–$1,500 per year to hidden exchange markups — or avoid them almost entirely with the right setup.

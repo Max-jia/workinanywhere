@@ -3,7 +3,7 @@ title: 'Tbilisi Digital Nomad Guide 2026: 1-Year Visa-Free & 1% Tax Rate'
 description: 'Why Tbilisi is attracting a growing community of remote workers — 1-year visa-free entry, $1,000-1,500/month living costs, 1% small business tax, and a thriving creative scene.'
 pubDate: 2026-06-18
 category: city-guides
-heroImage: ../../assets/city-london.jpg
+heroImage: ../../assets/city-tbilisi.jpg
 ---
 
 Tbilisi sits at the crossroads of Europe and Asia, and in 2026 it's becoming one of the most talked-about digital nomad destinations in the world — without the crowds and prices of Lisbon or Bali.

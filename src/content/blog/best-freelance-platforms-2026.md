@@ -3,7 +3,7 @@ title: '4 Best Freelance Platforms 2026 (Fees Compared: Upwork vs Fiverr vs Topt
 description: 'A comparison of Upwork, Fiverr, Toptal, and Contra — real fees, who each platform is best for, and how to choose based on your skills and income goals.'
 pubDate: 2026-06-13
 category: jobs
-heroImage: ../../assets/remote-code.jpg
+heroImage: ../../assets/job-resume.jpg
 ---
 
 The freelance platform you choose directly impacts how much of your earnings you keep. A 20% commission on a $5,000 project is $1,000 — that's real money. Yet many freelancers pick a platform based on name recognition alone, without comparing the numbers.

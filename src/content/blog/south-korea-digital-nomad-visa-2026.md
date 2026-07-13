@@ -3,7 +3,7 @@ title: 'South Korea Just Launched a Digital Nomad Visa. It Is Way Easier to Get 
 description: 'Korea officially launched its F-1-D workation visa on June 30. The income requirements now depend on your age and where you live. Younger nomads willing to live outside Seoul can qualify for roughly $37,000 a year.'
 pubDate: 2026-07-11
 category: finance
-heroImage: ../../assets/city-tokyo.jpg
+heroImage: ../../assets/travel-passport.jpg
 ---
 
 South Korea just made a quiet move that changes the nomad visa landscape. On June 30, the country officially launched its F-1-D Workation Visa, converting a two-year pilot into permanent law. The big news is not that Korea has a nomad visa. It is how they structured it.

@@ -3,7 +3,7 @@ title: 'Buenos Aires Digital Nomad Guide 2026: Still Affordable? (Real Budget)'
 description: 'How Argentina''s economic changes affect nomad budgets — the real cost of living in Buenos Aires, the digital nomad visa, and what $1,500/month actually buys you now.'
 pubDate: 2026-06-08
 category: city-guides
-heroImage: ../../assets/city-bangkok.jpg
+heroImage: ../../assets/travel-landscape.jpg
 ---
 
 Buenos Aires used to be the ultimate nomad arbitrage play: earn in dollars, spend in pesos at the "blue dollar" rate that was sometimes double the official exchange rate. That era is over — but does BA still make financial sense for remote workers in 2026?
