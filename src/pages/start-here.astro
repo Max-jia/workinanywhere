@@ -1,0 +1,203 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE_DESCRIPTION } from '../consts';
+import startHereImg from '../assets/travel-map.jpg';
+import beginnerJobImg from '../assets/entry-level-job.jpg';
+import vaJobImg from '../assets/virtual-assistant.jpg';
+import csJobImg from '../assets/customer-service-job.jpg';
+import nomadCitiesImg from '../assets/world-destinations.jpg';
+import nomadHowImg from '../assets/remote-worker-outdoor.jpg';
+
+const pageTitle = 'New to Digital Nomad Life? Start Here';
+const pageDesc = 'Everything you need to know about becoming a digital nomad. What it is, how to get a remote job with no experience, where to go first, and how much it costs.';
+---
+
+<BaseLayout title={pageTitle} description={pageDesc}>
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <p class="hero-label">&#x2708; &nbsp;&#x1F4BB; &nbsp;&#x1F30D;</p>
+      <h1 class="hero-title">New Here? Start Here.</h1>
+      <p class="hero-subtitle">You keep hearing about digital nomads and remote work but have no idea where to start. That is completely normal. 43 million people have figured it out. Here is your path, in order.</p>
+    </section>
+
+    <!-- Step 1: What is a digital nomad -->
+    <section class="step">
+      <h2 class="step-num">Step 1</h2>
+      <h3 class="step-title">What is a digital nomad, anyway?</h3>
+      <p>A digital nomad is someone who earns their living online and is not tied to a single location. You work from wherever you want. Chiang Mai one month. Lisbon the next. Your income comes with you.</p>
+      <p>About 43 million people live this way now. They are not all software developers. They are customer service reps, virtual assistants, writers, marketers, tutors, and accountants. The common thread is location independence, not job title.</p>
+      <p>No, you do not need to be rich. Most nomads spend $1,000 to $2,000 a month total. Less than rent in a major US city.</p>
+    </section>
+
+    <!-- Step 2: Getting a remote job -->
+    <section class="step">
+      <h2 class="step-num">Step 2</h2>
+      <h3 class="step-title">Get a job you can do from anywhere</h3>
+      <p>This is the part that scares people. It should not. The number of companies hiring for remote positions is growing, not shrinking. And many of them hire people with no prior remote experience.</p>
+
+      <div class="guide-cards">
+        <a href="/blog/remote-jobs-no-experience-2026" class="guide-card">
+          <Image src={beginnerJobImg} alt="" width={360} height={200} />
+          <div class="guide-card-body">
+            <span class="guide-card-tag">Popular</span>
+            <h4>How to Get a Remote Job With No Experience</h4>
+            <p>The entry level remote jobs companies are actually hiring for right now, where to find them, and how to get hired.</p>
+          </div>
+        </a>
+        <a href="/blog/virtual-assistant-guide-2026" class="guide-card">
+          <Image src={vaJobImg} alt="" width={360} height={200} />
+          <div class="guide-card-body">
+            <span class="guide-card-tag">Fastest Entry</span>
+            <h4>Become a Virtual Assistant With Zero Experience</h4>
+            <p>VA work is the lowest barrier to entry in remote work. Here is how to start and what you can earn.</p>
+          </div>
+        </a>
+        <a href="/blog/remote-customer-service-jobs-2026" class="guide-card">
+          <Image src={csJobImg} alt="" width={360} height={200} />
+          <div class="guide-card-body">
+            <span class="guide-card-tag">Hiring Now</span>
+            <h4>10 Companies Hiring Remote Customer Service Right Now</h4>
+            <p>TTEC, Amazon, American Express, and more companies with open remote positions today.</p>
+          </div>
+        </a>
+        <a href="/blog/best-freelance-platforms-2026" class="guide-card">
+          <Image src={vaJobImg} alt="" width={360} height={200} />
+          <div class="guide-card-body">
+            <span class="guide-card-tag">Freelance Route</span>
+            <h4>Best Freelance Platforms Compared</h4>
+            <p>Upwork vs Fiverr vs Toptal vs Contra. Real fees, real competition, and which one fits you.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Step 3: Where to go -->
+    <section class="step">
+      <h2 class="step-num">Step 3</h2>
+      <h3 class="step-title">Pick your first city</h3>
+      <p>Your first destination should make things easier, not harder. Pick somewhere with a proven nomad community, reliable internet, and a simple visa. You can get adventurous on your second stop.</p>
+
+      <div class="guide-cards">
+        <a href="/blog/best-digital-nomad-destinations-compared-2026" class="guide-card">
+          <Image src={nomadCitiesImg} alt="" width={360} height={200} />
+          <div class="guide-card-body">
+            <span class="guide-card-tag">Compare Cities</span>
+            <h4>10 Best Digital Nomad Cities Compared</h4>
+            <p>Chiang Mai vs Medellin vs Lisbon vs Da Nang. Real costs, internet, and which fits your style.</p>
+          </div>
+        </a>
+        <a href="/blog/cheapest-digital-nomad-cities-less-than-1000" class="guide-card">
+          <Image src={vaJobImg} alt="" width={360} height={200} />
+          <div class="guide-card-body">
+            <span class="guide-card-tag">Budget Picks</span>
+            <h4>5 Cities Where You Can Live on $1,000/Month</h4>
+            <p>It is still possible. These cities offer a comfortable life for under a thousand a month.</p>
+          </div>
+        </a>
+        <a href="/blog/first-week-chiang-mai-digital-nomad" class="guide-card">
+          <Image src={vaJobImg} alt="" width={360} height={200} />
+          <div class="guide-card-body">
+            <span class="guide-card-tag">First Timer Favorite</span>
+            <h4>Your First Week in Chiang Mai</h4>
+            <p>The most common first stop for a reason. Where to stay, where to work, and how to settle in fast.</p>
+          </div>
+        </a>
+        <a href="/blog/50-countries-nomad-visas-2026" class="guide-card">
+          <Image src={vaJobImg} alt="" width={360} height={200} />
+          <div class="guide-card-body">
+            <span class="guide-card-tag">Visas</span>
+            <h4>50+ Countries With Digital Nomad Visas</h4>
+            <p>Which ones are actually worth applying for. Most of them are marketing. A few genuinely matter.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Step 4: Money & Logistics -->
+    <section class="step">
+      <h2 class="step-num">Step 4</h2>
+      <h3 class="step-title">Get your money and logistics sorted</h3>
+
+      <div class="guide-cards">
+        <a href="/blog/how-to-become-digital-nomad-2026" class="guide-card guide-card-sm">
+          <div class="guide-card-body">
+            <h4>How to Become a Digital Nomad: Full Step-by-Step Guide</h4>
+            <p>The complete walkthrough. Job, city, money, insurance. In order.</p>
+          </div>
+        </a>
+        <a href="/blog/digital-nomad-budget-breakdown-2026" class="guide-card guide-card-sm">
+          <div class="guide-card-body">
+            <h4>What It Actually Costs: Budgets at $1K, $2K, and $3K/Month</h4>
+            <p>Real numbers. No Instagram math.</p>
+          </div>
+        </a>
+        <a href="/blog/banking-across-borders-wise-revolut-2026" class="guide-card guide-card-sm">
+          <div class="guide-card-body">
+            <h4>Wise vs Revolut for Digital Nomads</h4>
+            <p>Which saves you more on international transfers and spending.</p>
+          </div>
+        </a>
+        <a href="/blog/digital-nomad-packing-list-2026" class="guide-card guide-card-sm">
+          <div class="guide-card-body">
+            <h4>What to Pack (and What to Leave)</h4>
+            <p>The minimalist packing list from nomads who learned the hard way.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p>Every article on this site is written by people who have actually done this. No AI-generated filler. No generic advice scraped from Reddit. Just the stuff that works.</p>
+      <nav>
+        <a href="/blog">All articles</a>
+        <a href="/about">About</a>
+        <a href="/privacy">Privacy</a>
+      </nav>
+    </footer>
+  </main>
+</BaseLayout>
+
+<style>
+  main { max-width: 960px; margin: 0 auto; padding: 0 2em 3em; }
+
+  /* Hero */
+  .hero { text-align: center; padding: 3em 0 1.5em; }
+  .hero-label { font-size: 1.6rem; margin-bottom: 0.8em; opacity: 0.4; letter-spacing: 0.3em; }
+  .hero-title { font-family: var(--font-heading); font-size: clamp(2rem,5vw,3rem); font-weight: 400; line-height: 1.1; margin-bottom: 0.5em; color: var(--color-text-heading); }
+  .hero-subtitle { font-size: 1.02rem; color: var(--color-text-muted); max-width: 560px; margin: 0 auto 2.5em; line-height: 1.6; }
+
+  /* Steps */
+  .step { margin-bottom: 3em; }
+  .step-num { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-accent); margin-bottom: 0.2em; font-weight: 600; }
+  .step-title { font-family: var(--font-heading); font-size: 1.5rem; font-weight: 400; color: var(--color-text-heading); margin-bottom: 0.5em; }
+  .step p { font-size: 0.92rem; color: var(--color-text-muted); line-height: 1.6; max-width: 600px; margin-bottom: 1em; }
+
+  /* Guide Cards */
+  .guide-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 1em; margin-top: 1.2em; }
+  .guide-card { background: var(--color-surface); border-radius: 16px; overflow: hidden; text-decoration: none; color: inherit; transition: transform 0.15s; }
+  .guide-card:hover { transform: translateY(-2px); }
+  .guide-card img { width: 100%; aspect-ratio: 16/9; object-fit: cover; }
+  .guide-card-body { padding: 1em 1.2em 1.2em; }
+  .guide-card-tag { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-accent); font-weight: 600; }
+  .guide-card-body h4 { font-family: var(--font-heading); font-size: 0.95rem; font-weight: 400; line-height: 1.2; color: var(--color-text-heading); margin: 0.3em 0; }
+  .guide-card-body p { font-size: 0.78rem; color: var(--color-text-muted); line-height: 1.4; margin: 0; }
+  .guide-card-sm .guide-card-body p { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+  /* Footer */
+  .site-footer { max-width: 500px; margin: 4em auto 1em; text-align: center; }
+  .site-footer p { font-size: 0.82rem; color: var(--color-text-muted); line-height: 1.6; margin: 0 0 0.8em; }
+  .site-footer nav { display: flex; justify-content: center; gap: 1.5em; }
+  .site-footer nav a { font-size: 0.8rem; color: var(--color-text-muted); }
+
+  @media (prefers-color-scheme: dark) { .hero-title { color: var(--color-text-heading-dark); } .guide-card { background: var(--color-surface-dark); } .guide-card-body h4 { color: var(--color-text-heading-dark); } }
+
+  @media (max-width: 600px) {
+    .guide-cards { grid-template-columns: 1fr; }
+    main { padding: 0 1em 2em; }
+    .hero { padding: 2em 0 1em; }
+    .hero-title { font-size: clamp(1.5rem,7vw,2rem); }
+  }
+</style>
