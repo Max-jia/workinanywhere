@@ -1,7 +1,7 @@
 ---
 title: 'Best Digital Nomad Destinations 2026: 10 Cities Compared on Cost, Internet, and Lifestyle'
 description: 'A side-by-side comparison of the top digital nomad cities in 2026. Real cost of living, internet speeds, visa requirements, and which city fits your budget and lifestyle.'
-pubDate: 2026-07-14
+pubDate: 2026-06-22
 category: city-guides
 heroImage: ../../assets/world-destinations.jpg
 ---

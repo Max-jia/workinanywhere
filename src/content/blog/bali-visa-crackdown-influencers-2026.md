@@ -1,7 +1,7 @@
 ---
 title: 'Bali Is Arresting Influencers Who Work on Tourist Visas. 165 People Have Been Deported This Year.'
 description: 'Indonesian immigration deployed a 100-officer task force in April. They monitor social media in real time. If you post branded content from Bali on a tourist visa, you risk a $30,000 fine, deportation, and a lifetime ban.'
-pubDate: 2026-07-12
+pubDate: 2026-06-20
 category: finance
 heroImage: ../../assets/bali-temple.jpg
 ---

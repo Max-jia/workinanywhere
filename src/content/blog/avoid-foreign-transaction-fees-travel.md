@@ -1,7 +1,7 @@
 ---
 title: 'The Foreign Transaction Fee Trick Your Bank Hopes You Never Notice'
 description: 'Your bank charges you 3 percent on every purchase abroad and buries it in the exchange rate. Stop paying it. Set up the right cards. Save hundreds of dollars a year.'
-pubDate: 2026-07-08
+pubDate: 2026-06-17
 category: finance
 heroImage: ../../assets/finance-atm-card.jpg
 ---

@@ -1,7 +1,7 @@
 ---
 title: 'How to Become a Virtual Assistant in 2026 With No Experience'
 description: 'VA work is the fastest way into remote work. No degree required. No prior experience needed. Here is exactly what the job involves, how much you can make, and where to find your first client.'
-pubDate: 2026-07-14
+pubDate: 2026-06-10
 category: jobs
 heroImage: ../../assets/virtual-assistant.jpg
 ---

@@ -1,7 +1,7 @@
 ---
 title: 'I Have Been a Digital Nomad for Two Years. Here Is What Nobody Warned Me About.'
 description: '35 percent of nomads missed a wedding or a birth. 29 percent report increased mental stress. Only 11 percent actually save more money. The Instagram version of this life leaves out the parts that matter.'
-pubDate: 2026-07-09
+pubDate: 2026-06-25
 category: lifestyle
 heroImage: ../../assets/person-thinking.jpg
 ---

@@ -1,7 +1,7 @@
 ---
 title: 'So You Told Your Parents You Are Becoming a Digital Nomad. Now What?'
 description: '"But when will you get a real job?" "Are you running away from something?" "How do you even make money?" Here is how to have the conversations that actually help your family understand.'
-pubDate: 2026-07-10
+pubDate: 2026-07-04
 category: lifestyle
 heroImage: ../../assets/family-together.jpg
 ---

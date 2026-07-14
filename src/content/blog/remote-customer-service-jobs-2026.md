@@ -1,7 +1,7 @@
 ---
 title: 'Remote Customer Service Jobs: 10 Companies Hiring Now (2026)'
 description: 'Remote customer service is the single largest entry point into remote work. Here are the companies hiring right now, what they pay, and how to get hired.'
-pubDate: 2026-07-14
+pubDate: 2026-06-30
 category: jobs
 heroImage: ../../assets/customer-service-job.jpg
 ---

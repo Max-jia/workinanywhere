@@ -1,7 +1,7 @@
 ---
 title: 'Can I Use My US Credit Card in Thailand? Yes, But Do These Three Things First.'
 description: 'The short answer is yes, your US cards work in Thailand. But if you do not set them up right, you will pay hidden fees on every purchase and your bank might freeze your account on day two.'
-pubDate: 2026-07-09
+pubDate: 2026-07-02
 category: finance
 heroImage: ../../assets/bank-card-closeup.jpg
 ---
