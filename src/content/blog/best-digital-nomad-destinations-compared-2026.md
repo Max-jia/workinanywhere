@@ -97,4 +97,6 @@ The practical takeaway: you have more options than ever, and the competition bet
 
 ---
 
+*Sources: Cost-of-living data from Numbeo and Nomad List, internet speeds from Speedtest Global Index, visa requirements from official government websites, Google Trends search data as reported by Colormelon (December 2025). Data verified as of July 2026.*
+
 **Next reads:** [Chiang Mai first week guide](/blog/first-week-chiang-mai-digital-nomad) · [Is Medellin safe?](/blog/is-medellin-safe-digital-nomad) · [$1,000/month nomad cities](/blog/cheapest-digital-nomad-cities-less-than-1000) · [Full list of 50+ nomad visas](/blog/50-countries-nomad-visas-2026)

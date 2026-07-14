@@ -26,6 +26,31 @@ Based on `.agents/skills/humanizer/SKILL.md`. Scan every article for:
 - Unresolved tension or mixed feelings where appropriate (not every take needs to be clean)
 - Varied openings — don't start every paragraph the same way
 
+### Verifiability Rule
+
+Every factual claim and data point in an article must be traceable to a real, public source. Nothing gets written into an article unless it can be verified.
+
+**Allowed data sources:**
+- Government websites (visa requirements, tax rules, official statistics)
+- Company career pages and official announcements (salary ranges, hiring status, policy changes)
+- Published industry reports (FlexJobs, MBO Partners, Nomads.com, Buffer State of Remote Work)
+- Reputable news outlets (Reuters, BBC, NYT, Bloomberg, TechCrunch)
+- Public databases (Numbeo cost of living, Nomad List city data, Speedtest Global Index)
+- Platform marketplace data (Upwork, Glassdoor, Indeed salary insights)
+
+**Never do:**
+- Invent a statistic to make a point stronger ("78% of nomads say...")
+- Attribute data to a vague source ("studies show," "research indicates," "industry reports suggest")
+- Use AI-generated numbers that look plausible but cannot be verified
+- Cite a source you have not actually checked exists
+
+**At the bottom of every article, include a source line:**
+```
+*Source: [what you referenced]. Data verified as of [month year].*
+```
+
+If a claim cannot be traced to one of the allowed sources, either find a real source or remove the claim. Approximate ranges are OK ("$15 to $22 an hour" based on Glassdoor listings) — fabricated precise numbers are not.
+
 ### Format Rules
 
 - Frontmatter: `title`, `description`, `pubDate`, `category`, `heroImage`

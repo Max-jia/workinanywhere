@@ -82,6 +82,6 @@ VAs who do this keep their clients for years. VAs who do not spend their lives c
 
 ---
 
-*Income data from Glassdoor, Upwork marketplace trends, and VA industry surveys. Job availability changes frequently. Verify current openings with the platforms listed.*
+*Sources: Glassdoor salary data, Upwork marketplace trends 2026, and published rates from Belay, Time Etc, and Fancy Hands. Data verified as of July 2026.*
 
 **Next reads:** [How to get a remote job with no experience](/blog/remote-jobs-no-experience-2026) · [Best freelance platforms in 2026](/blog/best-freelance-platforms-2026) · [How to become a digital nomad](/blog/how-to-become-digital-nomad-2026)

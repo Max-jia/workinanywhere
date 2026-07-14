@@ -72,6 +72,6 @@ Getting your first remote job without experience is mostly about aiming at the r
 
 ---
 
-*Salary data from Glassdoor, FlexJobs Q2 2026 Remote Work Index, and company job boards. Job listings change frequently. Verify current openings directly with employers.*
+*Sources: Glassdoor salary data, FlexJobs Q2 2026 Remote Work Index, and company career pages for TTEC, Concentrix, LiveOps, Axion Data Services, Clickworker, Accenture, Genpact, Cognizant, VIPKid, Preply, Cambly. Data verified as of July 2026.*
 
 **Next reads:** [Best freelance platforms compared](/blog/best-freelance-platforms-2026) · [How to become a digital nomad step by step](/blog/how-to-become-digital-nomad-2026) · [Find legitimate remote jobs](/blog/find-legitimate-remote-jobs-2026)
