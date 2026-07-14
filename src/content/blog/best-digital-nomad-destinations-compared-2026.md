@@ -29,7 +29,7 @@ I have asked nomads in a dozen cities what they actually spend, how reliable the
 
 ---
 
-## Chiang Mai, Thailand — the first-timer's default for a reason
+## Chiang Mai, Thailand: the first-timer's default for a reason
 
 If there is a place designed to make your first month as a nomad easy, it is Chiang Mai. Nimmanhaemin Road alone has more coworking spaces per block than most countries have total. The local economy runs on people like you showing up with a laptop and staying a while.
 
@@ -39,17 +39,17 @@ It is not the cheapest city in Southeast Asia anymore. It is still the easiest.
 
 ---
 
-## Medellín, Colombia — where Google Trends is pointing hardest
+## Medellín, Colombia: where Google Trends is pointing hardest
 
 Medellín has spent the last decade rewriting its reputation, and the digital nomad community has noticed. Colombia now tops Google search rankings for nomad destinations heading into 2026. The new digital nomad visa allows a two-year stay, longer than almost anywhere else.
 
 The city delivers what nomads actually need. Modern apartments in Laureles and El Poblado at $500 to $800 a month. Reliable internet. Coworking spaces with good coffee. A springlike climate that does not change much. The metro system works. The Spanish is clear enough to learn fast.
 
-Safety is the question everyone asks. The honest answer: most nomads have zero issues. Stay in the established neighborhoods. Do not flash expensive things. Take Ubers at night. The same rules that apply in any large Latin American city will keep you fine here.
+Safety is the question everyone asks. Most nomads have zero issues. Stay in the established neighborhoods. Do not flash expensive things. Take Ubers at night. The same rules that apply in any large Latin American city will keep you fine here.
 
 ---
 
-## Da Nang, Vietnam — the value play that keeps getting better
+## Da Nang, Vietnam: the value play that keeps getting better
 
 Da Nang does not get the attention that Chiang Mai or Bali get, and that is part of the appeal. The beach is clean and long. The seafood is cheap and fresh. A furnished studio within walking distance of a coworking space runs $300 to $450 a month.
 
@@ -59,7 +59,7 @@ If you want a beach town where you can work productively and spend under $900 a 
 
 ---
 
-## Lisbon, Portugal — Europe's entry point, getting pricier
+## Lisbon, Portugal: Europe's entry point, getting pricier
 
 Lisbon became the default European nomad hub between 2021 and 2024, and the rent shows it. A one-bedroom in a central neighborhood now costs $1,000 to $1,500 a month. That is still cheaper than most Western European capitals. It is not the bargain it was three years ago.
 
@@ -69,7 +69,7 @@ If you earn in dollars or euros, Lisbon is comfortable. If you earn less and nee
 
 ---
 
-## Mexico City — the one that surprises people
+## Mexico City: the one that surprises people
 
 Mexico City does not immediately register as a digital nomad hub, but the community here is growing faster than most people realize. Roma Norte and Condesa feel like neighborhoods purpose-built for people who work from cafes. The food scene alone is worth the trip.
 
@@ -79,7 +79,7 @@ The visa is straightforward. Most people enter on a 180-day tourist permit and f
 
 ---
 
-## Tokyo, Japan — the infrastructure play
+## Tokyo, Japan: the infrastructure play
 
 The weak yen has made Tokyo accessible in a way it has not been for decades. A decent apartment in a central neighborhood costs $700 to $1,200 a month. Groceries and eating out are cheaper than most US cities. The internet is among the fastest in the world.
 
