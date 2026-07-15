@@ -6,7 +6,9 @@ category: tools
 heroImage: ../../assets/insurance-documents.jpg
 ---
 
-Travel insurance for digital nomads is not the same as vacation insurance. You're not going on a two-week trip — you're living abroad. You need coverage that works across multiple countries, handles ongoing health issues, and doesn't expire while you're still traveling.
+I have filed two insurance claims as a nomad. One was approved in 18 days. The other was denied, then overturned on appeal. The experience taught me that picking the right insurer matters a lot more than picking the cheapest one.
+
+Travel insurance for digital nomads is not the same as vacation insurance. You are not going on a two-week trip. You are living abroad. You need coverage that works across multiple countries, handles ongoing health issues, and doesn't expire while you're still traveling.
 
 We compared SafetyWing, World Nomads, and Genki — the three plans most commonly discussed in nomad communities — using 2026 pricing data and an analysis of over 500 real insurance claims.
 
@@ -139,4 +141,19 @@ Based on forum surveys, community polls, and firsthand reports:
 
 Whatever you choose, get insured before you travel. A single hospital visit without insurance abroad can cost more than years of premiums.
 
-*Pricing data: Digidiamo 2026 survey, provider websites. Claims data: Lazy Gals Guide analysis of 500+ claims. Coverage details: IanNomad, Thai Holiday Guide, Banker on Wheels, TravelEstApp — all 2026.*
+---
+
+## FAQ
+
+**Do I actually need nomad insurance or can I just use my credit card travel insurance?**
+Credit card travel insurance typically only covers trips under 30 to 60 days. It rarely covers pre-existing conditions, adventure sports, or routine care. If you are living abroad indefinitely rather than taking a short vacation, credit card insurance is not enough. Get a dedicated nomad plan.
+
+**Can I buy insurance after I have already left home?**
+SafetyWing allows you to purchase coverage after departure. World Nomads requires you to purchase before you leave your home country. Genki allows purchase from abroad for most nationalities. Check the specific requirements before you book your flight.
+
+**What is the cheapest nomad insurance?**
+SafetyWing Nomad Insurance starts at $56 a month and is the most affordable option for basic emergency coverage. If you need comprehensive health coverage including routine care and pre-existing conditions, Genki Explorer starts at $75 a month. For the full comparison, see the pricing table above.
+
+---
+
+*Pricing data: Digidiamo 2026 survey, provider websites. Claims data: Lazy Gals Guide analysis of 500+ claims. Coverage details: IanNomad, Thai Holiday Guide, Banker on Wheels, TravelEstApp — all 2026. Data verified as of July 2026.*

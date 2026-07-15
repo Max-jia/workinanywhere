@@ -62,6 +62,19 @@ The people who burn out at this budget level are the ones who try to live a $2,0
 
 ---
 
+## FAQ
+
+**Which is the absolute cheapest city for digital nomads?**
+Da Nang, Vietnam. You can live comfortably on $650 to $900 a month. A studio apartment costs $300 to $450. Local meals are $1 to $3. The beach is free. The main trade-off is the visa situation: Vietnam does not have a long-term digital nomad visa, so most people do 90-day tourist visas or monthly border runs.
+
+**Is the internet reliable in these cities?**
+Generally yes. Chiang Mai and Da Nang have 50 to 200 Mbps connections widely available. Tbilisi has solid 30 to 100 Mbps. Sarajevo is the weakest of the five, but cafes and coworking spaces have reliable connections. If your work depends on video calls, Chiang Mai and Da Nang are the safest bets. See our [full comparison of best digital nomad cities](/blog/best-digital-nomad-destinations-compared-2026) for internet speed data.
+
+**Do I need a visa for these cities?**
+It depends on your passport. Most Western passport holders get 30 to 90 days visa-free in Thailand, Vietnam, Georgia, and Bosnia. Georgia offers one-year visa-free entry. If you plan to stay longer than 90 days, check the [specific digital nomad visa for your target country](/blog/50-countries-nomad-visas-2026).
+
+---
+
 *Cost of living data from Numbeo, Casa Basílico, and firsthand nomad budget reports, July 2026. Prices in USD. Individual spending varies.*
 
 **Next reads:** [Digital nomad cost of living at $1,000, $2,000, and $3,000](/blog/digital-nomad-budget-breakdown-2026) · [Real nomad budgets from our community](/blog/real-nomad-budgets-from-community) · [The hidden costs of being a digital nomad](/blog/hidden-costs-digital-nomad)

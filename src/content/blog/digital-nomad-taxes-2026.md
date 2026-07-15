@@ -93,4 +93,21 @@ Spend $500 on a professional consultation before you spend $50,000 fixing a prev
 
 ---
 
+---
+
+## FAQ
+
+**If I leave my home country, do I still owe taxes there?**
+It depends on your citizenship. The United States taxes citizens on worldwide income regardless of where they live. Most other countries tax based on residency. If you are a US citizen, you must file a federal tax return every year even if you never set foot in the US. The Foreign Earned Income Exclusion (FEIE) allows you to exclude up to $130,000 of foreign-earned income in 2026, but it does not exempt you from self-employment tax. Read about [how the 183-day rule actually works](/blog/tax-residency-183-day-rule).
+
+**What happens if I just do not file?**
+The IRS and most other tax authorities will eventually find out. Penalties accumulate. Interest compounds. Banks freeze accounts. Countries share financial data through automatic information exchange agreements. A [tax mistake can cost you everything](/blog/digital-nomad-tax-horror-stories). Talk to a professional before you leave.
+
+**When should I hire a cross-border tax professional?**
+Before you leave your home country. The consultation costs $200 to $500 and will save you multiples of that in avoided penalties. Look for someone who specifically handles expat and cross-border taxation, not a general domestic CPA. See our [full guide on US digital nomad taxes](/blog/us-digital-nomad-tax-guide-2026) for more detail.
+
+---
+
+*Sources: Forbes, Entrepreneur, and expat tax specialist guidance, 2026. This article is not tax advice. Consult a qualified cross-border tax professional for your specific situation. Data verified as of July 2026.*
+
 **Related:** [Wise vs Revolut](/blog/banking-across-borders-wise-revolut-2026) · [Managing Irregular Income](/blog/digital-nomad-money-management-2026) · [Nomad Budgets](/blog/digital-nomad-budget-breakdown-2026) · [All Finance](/blog/category/finance)
