@@ -99,4 +99,13 @@ Use platforms to get started and build your portfolio and reputation. Transition
 
 ---
 
+*We may earn a commission if you sign up through links below. No extra cost to you.*
+
+- [Create an Upwork profile](https://www.upwork.com/nx/signup/?referral=workinanywhere) — largest marketplace, most job categories
+- [Start on Fiverr](https://www.fiverr.com/join?referral=workinanywhere) — best for creative and digital services
+- [Apply to Toptal](https://www.toptal.com/apply?referral=workinanywhere) — top 3% freelancers, premium pay
+- [Join Contra](https://contra.com/signup?referral=workinanywhere) — zero commission, keep 100% of earnings
+
+---
+
 *Fee structures from platform websites and third-party comparisons (Colorlib, HR Future, ITQlick), June 2026. Freelancer counts and billings from company public disclosures. Toptal client pricing from third-party estimates.*

@@ -117,6 +117,16 @@ If you're visiting multiple countries in the same region, buy a **regional plan*
 
 **Bottom line:** All three are reliable. Airalo for flexibility, Holafly for unlimited peace of mind, Nomad for value. Local eSIMs beat all three for stays over one month in a single country.
 
+---
+
+*We may earn a commission if you purchase through links below. This does not affect the price you pay.*
+
+**Get connected before you land:**
+
+- [Buy an Airalo eSIM](https://www.airalo.com/?referral=WORKINANYWHERE) — 200+ countries, plans from $4.50
+- [Get Holafly unlimited data](https://esim.holafly.com/?ref=workinanywhere) — no data caps, 24/7 support
+- [Check Nomad eSIM deals](https://www.getnomad.app/?referral=workinanywhere) — best per-GB value
+
 *Pricing data: provider websites and comparison guides (The Vanabond Tales, GoMost, IanNomad), June 2026. Trustpilot ratings as of mid-2026. Price examples are indicative — actual costs vary by country and plan.*
 
 ---
