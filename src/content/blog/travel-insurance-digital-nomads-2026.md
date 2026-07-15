@@ -139,14 +139,4 @@ Based on forum surveys, community polls, and firsthand reports:
 
 Whatever you choose, get insured before you travel. A single hospital visit without insurance abroad can cost more than years of premiums.
 
----
-
-*We may earn a commission if you purchase through links below. This does not affect the price you pay, and we only recommend products we have researched and believe are worth your money.*
-
-**Ready to get covered?**
-
-- [Get a quote from SafetyWing](https://safetywing.com/?referenceID=workinanywhere) — most affordable, starts at $56/month
-- [Check Genki plans](https://www.genki.world/?via=workinanywhere) — full health coverage, highest approval rate
-- [Compare World Nomads](https://www.worldnomads.com/travel-insurance?affiliate=workinanywhere) — best for adventure sports
-
 *Pricing data: Digidiamo 2026 survey, provider websites. Claims data: Lazy Gals Guide analysis of 500+ claims. Coverage details: IanNomad, Thai Holiday Guide, Banker on Wheels, TravelEstApp — all 2026.*

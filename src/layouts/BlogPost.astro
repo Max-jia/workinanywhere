@@ -4,7 +4,6 @@ import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
-import NewsletterSignup from '../components/NewsletterSignup.astro';
 import RevealScript from '../components/RevealScript.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
@@ -75,7 +74,6 @@ const breadcrumbSchema = JSON.stringify({
           <slot />
         </div>
       </article>
-      <NewsletterSignup />
       <nav class="back-link">
         <a href="/blog">← Back</a>
       </nav>

@@ -122,15 +122,6 @@ This combination typically saves **£500–£1,500 per year** compared to using 
 
 **If you only get one account:** get Wise. It handles the core nomad need — moving money across currencies at the lowest cost — better than any other single provider.
 
----
-
-*We may earn a commission if you sign up through links below. This does not affect the price you pay.*
-
-**Open your account:**
-
-- [Sign up for Wise](https://wise.com/invite/ihp/workinanywhere) — free personal account, 25+ currencies, real exchange rate
-- [Get Revolut](https://www.revolut.com/referral/?referral=workinanywhere) — free Standard plan, best for daily spending abroad
-
 *Exchange rate comparisons based on BiyaPay analysis and provider pricing pages, June 2026. Real cost examples assume mid-market rates and standard plan tiers. Individual results vary by currency pair and transfer amount.*
 
 ---
