@@ -258,44 +258,89 @@ const galleryImages = await Promise.all(galleryCities.map(async c => {
   }
   .gallery-nav {
     display: flex; justify-content: center; flex-wrap: wrap;
-    gap: 2px; margin-top: 2px;
+    gap: 0.4em; margin-top: 0.8em;
+    padding: 0.6em 1em;
+    background: rgba(244,245,240,0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(216,220,210,0.5);
+    border-radius: 100px;
+    position: relative; z-index: 10;
+    max-width: fit-content;
+    margin-left: auto; margin-right: auto;
+  }
+  @media (prefers-color-scheme: dark) {
+    .gallery-nav {
+      background: rgba(19,22,20,0.8);
+      border-color: rgba(46,50,48,0.5);
+    }
   }
   .gallery-nav-item {
-    display: flex; align-items: center; gap: 0.4em;
-    padding: 0.4em 1em;
-    font-size: 0.76rem; font-weight: 500;
+    display: flex; align-items: center; gap: 0.35em;
+    padding: 0.35em 0.9em;
+    font-size: 0.74rem; font-weight: 500;
     color: var(--color-text-muted); text-decoration: none;
-    background: var(--color-elevated);
-    border: 1px solid var(--color-border);
-    transition: all 0.15s;
+    border-radius: 100px;
+    background: transparent;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    opacity: 0; transform: translateY(8px);
+    animation: navItemIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   }
-  .gallery-nav-item:first-child { border-radius: var(--radius-sm) 0 0 var(--radius-sm); }
-  .gallery-nav-item:last-child { border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
+  .gallery-nav-item:nth-child(1) { animation-delay: 0.3s; }
+  .gallery-nav-item:nth-child(2) { animation-delay: 0.33s; }
+  .gallery-nav-item:nth-child(3) { animation-delay: 0.36s; }
+  .gallery-nav-item:nth-child(4) { animation-delay: 0.39s; }
+  .gallery-nav-item:nth-child(5) { animation-delay: 0.42s; }
+  .gallery-nav-item:nth-child(6) { animation-delay: 0.45s; }
+  .gallery-nav-item:nth-child(7) { animation-delay: 0.48s; }
+  .gallery-nav-item:nth-child(8) { animation-delay: 0.51s; }
+  .gallery-nav-item:nth-child(9) { animation-delay: 0.54s; }
+  .gallery-nav-item:nth-child(10) { animation-delay: 0.57s; }
+  .gallery-nav-item:nth-child(11) { animation-delay: 0.60s; }
+  .gallery-nav-item:nth-child(12) { animation-delay: 0.63s; }
+  .gallery-nav-item:nth-child(13) { animation-delay: 0.66s; }
+  .gallery-nav-item:nth-child(14) { animation-delay: 0.69s; }
+  .gallery-nav-item:nth-child(15) { animation-delay: 0.72s; }
+  .gallery-nav-item:nth-child(16) { animation-delay: 0.75s; }
+  @keyframes navItemIn {
+    to { opacity: 1; transform: translateY(0); }
+  }
   .gallery-nav-item:hover {
-    color: var(--color-text-heading);
-    background: var(--color-accent-light);
-    border-color: var(--color-accent);
+    color: #fff;
+    background: var(--color-text-heading);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(26,31,29,0.15);
+  }
+  @media (prefers-color-scheme: dark) {
+    .gallery-nav-item:hover {
+      color: var(--color-bg-dark);
+      background: var(--color-text-heading-dark);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    }
   }
   .gallery-nav-item span {
-    font-size: 0.68rem; font-weight: 600;
+    font-size: 0.66rem; font-weight: 600;
     color: var(--color-tag-budget);
     background: var(--color-tag-budget-bg);
     padding: 0.15em 0.5em; border-radius: 100px;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   }
-  @media (prefers-color-scheme: dark) {
-    .gallery-nav-item { background: var(--color-elevated-dark); border-color: var(--color-border-dark); color: var(--color-text-muted-dark); }
-    .gallery-nav-item:hover { color: var(--color-text-heading-dark); background: var(--color-accent-light-dark); }
+  .gallery-nav-item:hover span {
+    color: #fff;
+    background: rgba(255,255,255,0.2);
   }
   @media (max-width: 700px) {
     .hero-gallery { height: 240px; }
-    .gallery-nav { gap: 1px; }
-    .gallery-nav-item { padding: 0.3em 0.6em; font-size: 0.68rem; }
-    .gallery-nav-item:first-child,
-    .gallery-nav-item:last-child { border-radius: 0; }
+    .gallery-nav {
+      border-radius: 24px; padding: 0.5em 0.8em;
+      gap: 0.25em; margin-top: -16px;
+    }
+    .gallery-nav-item { padding: 0.3em 0.6em; font-size: 0.66rem; }
   }
   @media (max-width: 500px) {
     .hero-gallery { height: 180px; }
-    .gallery-nav-item { font-size: 0.62rem; padding: 0.25em 0.5em; }
+    .gallery-nav { border-radius: 20px; padding: 0.4em 0.6em; }
+    .gallery-nav-item { font-size: 0.6rem; padding: 0.25em 0.5em; }
   }
 
   /* === Featured Banner === */
