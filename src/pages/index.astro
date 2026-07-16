@@ -51,7 +51,7 @@ const trendingCities = [
           client:load
           bend={3}
           borderRadius={0.05}
-          scrollSpeed={1.5}
+          scrollSpeed={1.2}
           scrollEase={0.05}
           items={[
             { image: 'https://images.pexels.com/photos/14545478/pexels-photo-14545478.jpeg?w=600&q=80', text: '' },
@@ -62,19 +62,35 @@ const trendingCities = [
             { image: 'https://images.pexels.com/photos/16082914/pexels-photo-16082914.jpeg?w=600&q=80', text: '' },
             { image: 'https://images.pexels.com/photos/13034625/pexels-photo-13034625.jpeg?w=600&q=80', text: '' },
             { image: 'https://images.pexels.com/photos/14525794/pexels-photo-14525794.jpeg?w=600&q=80', text: '' },
+            { image: 'https://images.pexels.com/photos/13512671/pexels-photo-13512671.jpeg?w=600&q=80', text: '' },
+            { image: 'https://images.pexels.com/photos/10489376/pexels-photo-10489376.jpeg?w=600&q=80', text: '' },
+            { image: 'https://images.pexels.com/photos/12762122/pexels-photo-12762122.jpeg?w=600&q=80', text: '' },
+            { image: 'https://images.pexels.com/photos/12985227/pexels-photo-12985227.jpeg?w=600&q=80', text: '' },
+            { image: 'https://images.pexels.com/photos/16217875/pexels-photo-16217875.jpeg?w=600&q=80', text: '' },
+            { image: 'https://images.pexels.com/photos/17824118/pexels-photo-17824118.jpeg?w=600&q=80', text: '' },
+            { image: 'https://images.pexels.com/photos/15074412/pexels-photo-15074412.jpeg?w=600&q=80', text: '' },
+            { image: 'https://images.pexels.com/photos/12491650/pexels-photo-12491650.jpeg?w=600&q=80', text: '' },
           ]}
         />
       </div>
-      <!-- City labels below gallery -->
+      <!-- Clickable city labels -->
       <div class="gallery-labels">
-        <span>Chiang Mai <em>$600-900</em></span>
-        <span>Medellin <em>$800-1,200</em></span>
-        <span>Lisbon <em>$1,500-2,200</em></span>
-        <span>Costa Rica <em>$1,200-2,000</em></span>
-        <span>Bali <em>$800-1,300</em></span>
-        <span>New Zealand <em>$2,000-2,800</em></span>
-        <span>Croatia <em>$1,500-2,200</em></span>
-        <span>Bulgaria <em>$600-1,000</em></span>
+        <a href="/blog/first-week-chiang-mai-digital-nomad">Chiang Mai <em>$600-900</em></a>
+        <a href="/blog/is-medellin-safe-digital-nomad">Medellin <em>$800-1,200</em></a>
+        <a href="/blog/lisbon-neighborhood-guide-2026">Lisbon <em>$1,500-2,200</em></a>
+        <a href="/blog/da-nang-remote-work-guide-2026">Da Nang <em>$650-900</em></a>
+        <a href="/blog/bali-beyond-canggu-ubud-uluwatu-2026">Bali <em>$800-1,300</em></a>
+        <a href="/blog/barcelona-remote-work-guide-2026">Barcelona <em>$1,600-2,400</em></a>
+        <a href="/blog/tbilisi-georgia-digital-nomad-2026">Tbilisi <em>$700-1,100</em></a>
+        <a href="/blog/tokyo-digital-nomad-guide-2026">Tokyo <em>$1,400-2,200</em></a>
+        <a href="/blog/mexico-city-neighborhood-guide-2026">Mexico City <em>$1,000-1,600</em></a>
+        <a href="/blog/buenos-aires-digital-nomad-2026">Buenos Aires <em>$800-1,300</em></a>
+        <a href="/blog/new-zealand-digital-nomad-guide-2026">New Zealand <em>$2,000-2,800</em></a>
+        <a href="/blog/costa-rica-digital-nomad-guide-2026">Costa Rica <em>$1,200-2,000</em></a>
+        <a href="/blog/croatia-digital-nomad-guide-2026">Croatia <em>$1,500-2,200</em></a>
+        <a href="/blog/bulgaria-digital-nomad-guide-2026">Bulgaria <em>$600-1,000</em></a>
+        <a href="/blog/valencia-vs-barcelona-2026">Valencia <em>$1,300-1,900</em></a>
+        <a href="/blog/nagasaki-nomad-residency-2026">Nagasaki <em>$900-1,500</em></a>
       </div>
     </section>
 
@@ -245,9 +261,14 @@ const trendingCities = [
   .gallery-labels {
     position: relative; z-index: 2;
     display: flex; justify-content: center; flex-wrap: wrap;
-    gap: 0.4em 1.4em; margin-top: 1em;
-    font-size: 0.82rem; color: var(--color-text-heading);
+    gap: 0.3em 1.2em; margin-top: 1em;
+    font-size: 0.82rem;
   }
+  .gallery-labels a {
+    color: var(--color-text-heading); text-decoration: none;
+    transition: color 0.15s;
+  }
+  .gallery-labels a:hover { color: var(--color-accent); }
   .gallery-labels em {
     font-style: normal; font-weight: 600;
     color: var(--color-tag-budget);
@@ -256,10 +277,10 @@ const trendingCities = [
     font-size: 0.85em; margin-left: 0.3em;
   }
   @media (prefers-color-scheme: dark) {
-    .gallery-labels { color: var(--color-text-heading-dark); }
+    .gallery-labels a { color: var(--color-text-heading-dark); }
   }
   @media (max-width: 600px) {
-    .gallery-labels { font-size: 0.72rem; gap: 0.3em 0.8em; }
+    .gallery-labels { font-size: 0.72rem; gap: 0.3em 0.6em; }
   }
 
   /* === Featured Banner === */
