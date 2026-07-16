@@ -3,7 +3,7 @@ import { Image, getImage } from 'astro:assets';
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import CircularGallery from '../components/react/CircularGallery';
-import ScrollVelocity from '../components/react/ScrollVelocity';
+import BlurText from '../components/react/BlurText';
 import { CATEGORIES, SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import cityBangkok from '../assets/city-bangkok.jpg';
 import cityMedellin from '../assets/city-medellin.jpg';
@@ -66,13 +66,13 @@ const galleryImages = await Promise.all(galleryCities.map(async c => {
       <div class="hero-content">
         <p class="hero-label">The guide for remote workers who want to live anywhere</p>
         <div class="hero-title-wrap">
-          <ScrollVelocity
+          <BlurText
             client:load
-            texts={['Work Anywhere']}
-            velocity={30}
-            numCopies={4}
-            damping={60}
-            stiffness={300}
+            text="Work Anywhere"
+            delay={120}
+            animateBy="words"
+            threshold={0.1}
+            style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2.8rem, 6.5vw, 4.5rem)', fontWeight: 400, letterSpacing: '-0.025em', lineHeight: 1.15, margin: '0', color: 'var(--color-text-heading)' }}
           />
         </div>
         <p class="hero-subtitle">79 deep-dive guides on digital nomad cities, remote jobs, tools, money, and the lifestyle that comes with location independence.</p>
@@ -226,15 +226,8 @@ const galleryImages = await Promise.all(galleryCities.map(async c => {
     font-weight: 500;
   }
   .hero-title-wrap {
-    margin-bottom: 0.5em; overflow: hidden;
-  }
-  .hero-title-wrap :global(.scroller span) {
-    color: var(--color-text-heading);
-  }
-  @media (prefers-color-scheme: dark) {
-    .hero-title-wrap :global(.scroller span) {
-      color: var(--color-text-heading-dark);
-    }
+    display: flex; justify-content: center;
+    margin-bottom: 0.3em;
   }
   @media (prefers-color-scheme: dark) {
     .hero-title { color: var(--color-text-heading-dark); }
