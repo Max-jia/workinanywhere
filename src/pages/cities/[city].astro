@@ -32,6 +32,13 @@ const cityPosts = allPosts.filter(p => {
   return text.includes(slug.replace(/-/g, ' ')) || text.includes(name.toLowerCase());
 });
 
+const cityGuides = cityPosts.filter(p => p.data.category === 'city-guides');
+const relatedArticles = cityPosts.filter(p => p.data.category !== 'city-guides');
+
+const cats: Record<string, string> = {
+  tools: 'Tools & Gear', jobs: 'Job Hunting', lifestyle: 'Lifestyle', finance: 'Finance & Taxes'
+};
+
 const pageTitle = `${name}, ${country} — Digital Nomad Guide 2026`;
 const pageDesc = `${desc} Explore our complete guide to living and working remotely in ${name}, with real cost data and firsthand advice.`;
 ---
@@ -45,21 +52,42 @@ const pageDesc = `${desc} Explore our complete guide to living and working remot
       <p class="city-desc">{desc}</p>
     </section>
 
-    <section class="city-articles">
-      <h2>{cityPosts.length} article{cityPosts.length !== 1 ? 's' : ''} about {name}</h2>
-      <div class="city-article-list">
-        {cityPosts.map(p => (
-          <a href={`/blog/${p.id}`} class="city-article-card">
-            <div class="ca-body">
-              <span class="ca-cat">{p.data.category === 'city-guides' ? 'City Guide' : p.data.category === 'tools' ? 'Tools' : p.data.category === 'jobs' ? 'Jobs' : p.data.category === 'lifestyle' ? 'Lifestyle' : 'Finance'}</span>
-              <h3 class="ca-title">{p.data.title}</h3>
-              <p class="ca-desc">{p.data.description}</p>
-              <time class="ca-date">{p.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</time>
-            </div>
-          </a>
-        ))}
-      </div>
-    </section>
+    {cityGuides.length > 0 && (
+      <section class="city-section">
+        <h2>City Guides</h2>
+        <p class="section-sub">Dedicated guides to living and working in {name}</p>
+        <div class="city-article-list">
+          {cityGuides.map(p => (
+            <a href={`/blog/${p.id}`} class="city-article-card">
+              <div class="ca-body">
+                <h3 class="ca-title">{p.data.title}</h3>
+                <p class="ca-desc">{p.data.description}</p>
+                <time class="ca-date">{p.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</time>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {relatedArticles.length > 0 && (
+      <section class="city-section">
+        <h2>Related Articles</h2>
+        <p class="section-sub">More content mentioning or relevant to {name}</p>
+        <div class="city-article-list">
+          {relatedArticles.map(p => (
+            <a href={`/blog/${p.id}`} class="city-article-card">
+              <div class="ca-body">
+                <span class="ca-cat">{cats[p.data.category] || p.data.category}</span>
+                <h3 class="ca-title">{p.data.title}</h3>
+                <p class="ca-desc">{p.data.description}</p>
+                <time class="ca-date">{p.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</time>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
 
     {cityPosts.length === 0 && (
       <section class="city-empty">
@@ -95,14 +123,14 @@ const pageDesc = `${desc} Explore our complete guide to living and working remot
   .city-desc { font-size: 1rem; color: var(--color-text-muted); max-width: 500px; margin: 0 auto; line-height: 1.6; }
   @media (prefers-color-scheme: dark) { .city-title { color: var(--color-text-heading-dark); } }
 
-  .city-articles { margin-top: 2em; }
-  .city-articles h2 {
+  .city-section { margin-top: 2.5em; }
+  .city-section h2 {
     font-family: var(--font-heading); font-size: 1.25rem; font-weight: 400;
-    color: var(--color-text-heading); margin-bottom: 1em;
-    padding-bottom: 0.5em; border-bottom: 1px solid var(--color-border);
+    color: var(--color-text-heading); margin-bottom: 0.2em;
   }
+  .section-sub { font-size: 0.82rem; color: var(--color-text-muted); margin: 0 0 1em; }
   @media (prefers-color-scheme: dark) {
-    .city-articles h2 { color: var(--color-text-heading-dark); border-color: var(--color-border-dark); }
+    .city-section h2 { color: var(--color-text-heading-dark); }
   }
   .city-article-list { display: flex; flex-direction: column; gap: 0.8em; }
 
