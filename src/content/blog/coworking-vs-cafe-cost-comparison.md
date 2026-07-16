@@ -124,4 +124,4 @@ That's a reasonable price for a productive, socially connected work life — and
 
 **Bottom line:** Try coworking for a month. Compare the actual cost to what you spent on cafes. Most people are surprised to find coworking is cheaper — and immeasurably better for your productivity, your back, and your meeting etiquette.
 
-*Coworking prices sourced from Digidiamo 2026 survey and individual space listings. Cafe estimates based on typical menu prices in each city. Your actual spending may vary.*
+*Coworking prices sourced from Digidiamo 2026 survey and individual space listings. Cafe estimates based on typical menu prices in each city. Data verified as of July 2026.*

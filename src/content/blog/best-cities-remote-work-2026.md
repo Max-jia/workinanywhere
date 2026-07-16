@@ -100,4 +100,4 @@ One more thing: **don't commit to a city you've never visited.** Spend your firs
 
 *Cost data from Casa Basílico, Numbeo, and firsthand budget reports. Visa requirements verified against official government and immigration law firm sources, July 2026.*
 
-**Next reads:** [Chiang Mai vs Medellín — which hub should you pick?](/blog/chiang-mai-vs-medellin-2026) · [How to book long-stay rentals without getting scammed](/blog/book-long-stay-accommodation-guide) · [All city guides](/blog/category/city-guides)
+**Newer guides:** [Croatia digital nomad guide](/blog/croatia-digital-nomad-guide-2026) · [New Zealand digital nomad guide](/blog/new-zealand-digital-nomad-guide-2026) · [Costa Rica digital nomad guide](/blog/costa-rica-digital-nomad-guide-2026) · [All city guides](/blog/category/city-guides) · [Compare all cities](/cities)

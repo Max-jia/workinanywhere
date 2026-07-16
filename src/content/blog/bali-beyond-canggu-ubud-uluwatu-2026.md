@@ -89,4 +89,4 @@ Many experienced Bali nomads split their time: 2 weeks in Canggu for community, 
 
 **Bottom line:** Canggu is the easiest place to land — but not necessarily the best place to stay. Bali has distinct regions for different lifestyles. Try at least two before you decide where you belong.
 
-*Cost estimates from Casa Basílico, Nomad List, and community reports, 2026. Neighborhood descriptions from firsthand nomad accounts and published guides.*
+*Cost estimates from Casa Basílico, Nomad List, and community reports, 2026. Neighborhood descriptions from firsthand nomad accounts and published guides. Data verified as of July 2026.*

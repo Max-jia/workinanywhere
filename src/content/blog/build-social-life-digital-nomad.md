@@ -102,4 +102,6 @@ It's normal. Almost every long-term nomad goes through periods of loneliness. Th
 
 ---
 
-**Related:** [Avoid Burnout](/blog/digital-nomad-burnout-2026) · [Long-Distance Relationships](/blog/long-distance-relationships-digital-nomad) · [First 30 Days](/blog/first-30-days-digital-nomad-guide) · [All Lifestyle](/blog/category/lifestyle)
+*Data verified as of July 2026.*
+
+**Next reads:** [How to actually meet people when you arrive in a new city](/blog/how-to-meet-people-digital-nomad-city) · [Digital nomad burnout: warning signs](/blog/digital-nomad-burnout-2026) · [Long-distance relationships as a nomad](/blog/long-distance-relationships-digital-nomad) · [All Lifestyle](/blog/category/lifestyle)
