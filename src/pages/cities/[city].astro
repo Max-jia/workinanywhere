@@ -1,0 +1,149 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const cities = [
+    { slug: 'chiang-mai', name: 'Chiang Mai', country: 'Thailand', flag: '🇹🇭', cost: '$600-900/mo', desc: 'The most popular first stop for digital nomads. Reliable infrastructure, huge community, and a cost of living that is hard to beat.' },
+    { slug: 'medellin', name: 'Medellin', country: 'Colombia', flag: '🇨🇴', cost: '$800-1,200/mo', desc: 'Springlike climate year-round, a two-year digital nomad visa, and the strongest nomad community in Latin America.' },
+    { slug: 'lisbon', name: 'Lisbon', country: 'Portugal', flag: '🇵🇹', cost: '$1,500-2,200/mo', desc: 'Europe\'s entry point for digital nomads. Sun, sea, and a straightforward path to EU residency through the D8 visa.' },
+    { slug: 'da-nang', name: 'Da Nang', country: 'Vietnam', flag: '🇻🇳', cost: '$650-900/mo', desc: 'Southeast Asia\'s best-value beach city. Clean, modern, and still flying under the radar compared to Bali or Chiang Mai.' },
+    { slug: 'bali', name: 'Bali', country: 'Indonesia', flag: '🇮🇩', cost: '$800-1,300/mo', desc: 'Coworking culture, surf towns, rice terraces, and a digital nomad scene that has evolved far beyond the backpacker trail.' },
+    { slug: 'barcelona', name: 'Barcelona', country: 'Spain', flag: '🇪🇸', cost: '$1,600-2,400/mo', desc: 'Mediterranean lifestyle, world-class architecture, and a thriving remote work community in one of Europe\'s most vibrant cities.' },
+    { slug: 'tbilisi', name: 'Tbilisi', country: 'Georgia', flag: '🇬🇪', cost: '$700-1,100/mo', desc: 'One-year visa-free entry, a 1% small business tax rate, and a creative scene that punches well above its weight.' },
+    { slug: 'tokyo', name: 'Tokyo', country: 'Japan', flag: '🇯🇵', cost: '$1,400-2,200/mo', desc: 'The weak yen has made Tokyo surprisingly accessible. World-class infrastructure, food, and safety at a fraction of the old cost.' },
+    { slug: 'mexico-city', name: 'Mexico City', country: 'Mexico', flag: '🇲🇽', cost: '$1,000-1,600/mo', desc: 'A sprawling cultural powerhouse with neighborhoods that feel purpose-built for remote workers. The food scene alone justifies the trip.' },
+    { slug: 'buenos-aires', name: 'Buenos Aires', country: 'Argentina', flag: '🇦🇷', cost: '$800-1,300/mo', desc: 'European architecture, Latin American energy, and a cost of living that has become remarkably favorable for dollar earners.' },
+    { slug: 'new-zealand', name: 'New Zealand', country: 'New Zealand', flag: '🇳🇿', cost: '$2,000-2,800/mo', desc: 'Stunning nature, relaxed visa rules, and rock-solid infrastructure. The time zone is brutal but everything else is world-class.' },
+    { slug: 'costa-rica', name: 'Costa Rica', country: 'Costa Rica', flag: '🇨🇷', cost: '$1,200-2,000/mo', desc: 'Pura vida is not just a slogan. Straightforward DN visa, two coastlines, and a culture that prioritizes balance over burnout.' },
+    { slug: 'croatia', name: 'Croatia', country: 'Croatia', flag: '🇭🇷', cost: '$1,500-2,200/mo', desc: 'One of Europe\'s first DN visas. Adriatic coastline, fast fiber internet, and Mediterranean living at two-thirds the Italian price.' },
+    { slug: 'bulgaria', name: 'Bulgaria', country: 'Bulgaria', flag: '🇧🇬', cost: '$600-1,000/mo', desc: 'The EU\'s cheapest country for digital nomads. Flat 10% tax, fast internet, and a growing remote work community.' },
+    { slug: 'valencia', name: 'Valencia', country: 'Spain', flag: '🇪🇸', cost: '$1,300-1,900/mo', desc: 'Barcelona\'s more affordable sibling. Beach, paella, and a fast-growing nomad scene without Barcelona\'s rent inflation.' },
+    { slug: 'nagasaki', name: 'Nagasaki', country: 'Japan', flag: '🇯🇵', cost: '$900-1,500/mo', desc: 'Japan is actively recruiting remote workers to live here. Lower costs than Tokyo, rich history, and a unique opportunity to get paid to relocate.' },
+  ];
+  return cities.map(c => ({ params: { city: c.slug }, props: c }));
+}
+
+const { slug, name, country, flag, cost, desc } = Astro.props;
+const allPosts = (await getCollection('blog')).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const cityPosts = allPosts.filter(p => {
+  const text = (p.data.title + ' ' + p.data.description + ' ' + p.id).toLowerCase();
+  return text.includes(slug.replace(/-/g, ' ')) || text.includes(name.toLowerCase());
+});
+
+const pageTitle = `${name}, ${country} — Digital Nomad Guide 2026`;
+const pageDesc = `${desc} Explore our complete guide to living and working remotely in ${name}, with real cost data and firsthand advice.`;
+---
+
+<BaseLayout title={pageTitle} description={pageDesc}>
+  <main>
+    <section class="city-hero">
+      <p class="city-flag">{flag}</p>
+      <h1 class="city-title">{name}, {country}</h1>
+      <p class="city-cost"><span>Monthly budget</span> {cost}</p>
+      <p class="city-desc">{desc}</p>
+    </section>
+
+    <section class="city-articles">
+      <h2>{cityPosts.length} article{cityPosts.length !== 1 ? 's' : ''} about {name}</h2>
+      <div class="city-article-list">
+        {cityPosts.map(p => (
+          <a href={`/blog/${p.id}`} class="city-article-card">
+            <div class="ca-body">
+              <span class="ca-cat">{p.data.category === 'city-guides' ? 'City Guide' : p.data.category === 'tools' ? 'Tools' : p.data.category === 'jobs' ? 'Jobs' : p.data.category === 'lifestyle' ? 'Lifestyle' : 'Finance'}</span>
+              <h3 class="ca-title">{p.data.title}</h3>
+              <p class="ca-desc">{p.data.description}</p>
+              <time class="ca-date">{p.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</time>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    {cityPosts.length === 0 && (
+      <section class="city-empty">
+        <p>We are working on more {name} content. Check back soon.</p>
+        <a href="/cities" class="back-link">Browse all cities</a>
+      </section>
+    )}
+
+    <footer class="page-footer">
+      <nav>
+        <a href="/cities">All cities</a>
+        <a href="/blog">All articles</a>
+        <a href="/about">About</a>
+      </nav>
+    </footer>
+  </main>
+</BaseLayout>
+
+<style>
+  main { max-width: 720px; margin: 0 auto; padding: 0 2em 3em; }
+
+  .city-hero { text-align: center; padding: 3em 0 2em; }
+  .city-flag { font-size: 3rem; margin-bottom: 0.3em; }
+  .city-title {
+    font-family: var(--font-heading); font-size: clamp(2rem, 5vw, 3rem); font-weight: 400;
+    color: var(--color-text-heading); margin-bottom: 0.3em;
+  }
+  .city-cost {
+    font-size: 1rem; color: var(--color-tag-budget);
+    margin-bottom: 1em;
+  }
+  .city-cost span { color: var(--color-text-muted); font-weight: 400; margin-right: 0.3em; }
+  .city-desc { font-size: 1rem; color: var(--color-text-muted); max-width: 500px; margin: 0 auto; line-height: 1.6; }
+  @media (prefers-color-scheme: dark) { .city-title { color: var(--color-text-heading-dark); } }
+
+  .city-articles { margin-top: 2em; }
+  .city-articles h2 {
+    font-family: var(--font-heading); font-size: 1.25rem; font-weight: 400;
+    color: var(--color-text-heading); margin-bottom: 1em;
+    padding-bottom: 0.5em; border-bottom: 1px solid var(--color-border);
+  }
+  @media (prefers-color-scheme: dark) {
+    .city-articles h2 { color: var(--color-text-heading-dark); border-color: var(--color-border-dark); }
+  }
+  .city-article-list { display: flex; flex-direction: column; gap: 0.8em; }
+
+  .city-article-card {
+    display: block; text-decoration: none; color: inherit;
+    background: var(--color-elevated); border: 1px solid var(--color-border);
+    border-radius: var(--radius); padding: 1.2em 1.4em;
+    transition: transform 0.15s, box-shadow 0.15s;
+    box-shadow: var(--shadow-card);
+  }
+  .city-article-card:hover {
+    transform: translateY(-1px); box-shadow: var(--shadow-card-hover);
+  }
+  @media (prefers-color-scheme: dark) {
+    .city-article-card { background: var(--color-elevated-dark); border-color: var(--color-border-dark); }
+  }
+  .ca-cat {
+    font-size: 0.64rem; text-transform: uppercase; letter-spacing: 0.06em;
+    color: var(--color-accent); font-weight: 600;
+  }
+  .ca-title {
+    font-family: var(--font-heading); font-size: 1.05rem; font-weight: 400;
+    color: var(--color-text-heading); margin: 0.25em 0 0.2em; line-height: 1.2;
+  }
+  @media (prefers-color-scheme: dark) { .ca-title { color: var(--color-text-heading-dark); } }
+  .ca-desc {
+    font-size: 0.82rem; color: var(--color-text-muted); line-height: 1.4; margin: 0 0 0.4em;
+  }
+  .ca-date { font-size: 0.72rem; color: var(--color-text-muted); }
+
+  .city-empty { text-align: center; padding: 3em 0; color: var(--color-text-muted); }
+  .back-link { color: var(--color-accent); font-weight: 500; }
+
+  .page-footer { text-align: center; margin-top: 3em; padding-top: 2em; border-top: 1px solid var(--color-border); }
+  .page-footer nav { display: flex; justify-content: center; gap: 1.5em; }
+  .page-footer nav a { font-size: 0.82rem; color: var(--color-text-muted); }
+  @media (prefers-color-scheme: dark) { .page-footer { border-color: var(--color-border-dark); } }
+
+  @media (max-width: 600px) {
+    main { padding: 0 1em 2em; }
+    .city-hero { padding: 2em 0 1.5em; }
+    .city-article-card { padding: 1em; }
+  }
+</style>
