@@ -1,0 +1,120 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const cityPosts = (await getCollection('blog'))
+  .filter(p => p.data.category === 'city-guides')
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const pageTitle = 'Digital Nomad Cities Compared: Cost, Internet, and Quality of Life';
+const pageDesc = 'Compare the best cities for digital nomads in 2026. Real cost of living, internet speeds, visa requirements, and honest pros and cons for every destination we cover.';
+---
+
+<BaseLayout title={pageTitle} description={pageDesc}>
+  <main>
+    <section class="hero">
+      <h1 class="hero-title">Nomad Cities</h1>
+      <p class="hero-subtitle">Every city guide on this site, in one place. Sort by cost, region, or whatever matters most to you.</p>
+    </section>
+
+    <div class="city-grid">
+      {cityPosts.map((post) => (
+        <a href={`/blog/${post.id}`} class="city-card reveal">
+          <h2 class="city-name">{post.data.title}</h2>
+          <p class="city-desc">{post.data.description}</p>
+          <div class="city-meta">
+            <span class="city-date">{post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</span>
+            <span class="city-arrow">&rarr;</span>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <footer class="page-footer">
+      <p>We add new city guides regularly. Last updated: July 2026.</p>
+      <nav>
+        <a href="/blog">All articles</a>
+        <a href="/about">About</a>
+      </nav>
+    </footer>
+  </main>
+</BaseLayout>
+
+<style>
+  main { max-width: var(--max-width-wide); margin: 0 auto; padding: 0 2em 3em; }
+
+  .hero { text-align: center; padding: 3em 0 2em; }
+  .hero-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 5vw, 3rem); font-weight: 400;
+    color: var(--color-text-heading); margin-bottom: 0.4em;
+  }
+  .hero-subtitle {
+    font-size: 1rem; color: var(--color-text-muted);
+    max-width: 480px; margin: 0 auto;
+  }
+  @media (prefers-color-scheme: dark) {
+    .hero-title { color: var(--color-text-heading-dark); }
+  }
+
+  .city-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1em;
+    margin-top: 1.5em;
+  }
+
+  .city-card {
+    background: var(--color-elevated);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 1.4em 1.4em 1.2em;
+    text-decoration: none; color: inherit;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: var(--shadow-card);
+    display: flex; flex-direction: column;
+  }
+  .city-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-card-hover);
+  }
+  @media (prefers-color-scheme: dark) {
+    .city-card { background: var(--color-elevated-dark); border-color: var(--color-border-dark); }
+  }
+
+  .city-name {
+    font-family: var(--font-heading);
+    font-size: 1.05rem; font-weight: 400; line-height: 1.2;
+    color: var(--color-text-heading); margin: 0 0 0.3em;
+  }
+  @media (prefers-color-scheme: dark) {
+    .city-name { color: var(--color-text-heading-dark); }
+  }
+
+  .city-desc {
+    font-size: 0.82rem; color: var(--color-text-muted); line-height: 1.45;
+    flex: 1; margin: 0 0 0.8em;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  }
+
+  .city-meta {
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 0.72rem; color: var(--color-text-muted);
+  }
+  .city-arrow { font-size: 0.9rem; opacity: 0.4; transition: opacity 0.15s; }
+  .city-card:hover .city-arrow { opacity: 1; color: var(--color-accent); }
+
+  .page-footer {
+    text-align: center; margin-top: 3em; padding-top: 2em;
+    border-top: 1px solid var(--color-border);
+  }
+  .page-footer p { font-size: 0.82rem; color: var(--color-text-muted); margin: 0 0 0.5em; }
+  .page-footer nav { display: flex; justify-content: center; gap: 1.5em; }
+  .page-footer nav a { font-size: 0.82rem; color: var(--color-text-muted); }
+
+  @media (max-width: 600px) {
+    main { padding: 0 1em 2em; }
+    .city-grid { grid-template-columns: 1fr; }
+    .hero { padding: 2em 0 1em; }
+  }
+</style>
