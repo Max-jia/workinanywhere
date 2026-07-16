@@ -15,24 +15,49 @@ const grouped = CATEGORIES.map(cat => ({
 })).filter(g => g.posts.length > 0);
 
 function fmtDate(d) { return d.toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric'}); }
+
+const trendingCities = [
+  { name: 'Chiang Mai', cost: '$600-900/mo' },
+  { name: 'Medellin', cost: '$800-1,200/mo' },
+  { name: 'Da Nang', cost: '$650-900/mo' },
+  { name: 'Lisbon', cost: '$1,500-2,200/mo' },
+  { name: 'Tbilisi', cost: '$700-1,100/mo' },
+  { name: 'Mexico City', cost: '$1,000-1,600/mo' },
+  { name: 'Buenos Aires', cost: '$800-1,300/mo' },
+  { name: 'Tokyo', cost: '$1,400-2,200/mo' },
+];
 ---
 
 <BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
   <main>
     <!-- Hero -->
     <section class="hero">
-      <p class="hero-label">&#x2708; &nbsp;&#x1F4BB; &nbsp;&#x1F30D;</p>
-      <h1 class="hero-title">Work Anywhere</h1>
-      <p class="hero-subtitle">Curated guides for digital nomads and remote workers. Cities, tools, jobs, and the lifestyle that comes with location independence.</p>
-      <nav class="pill-nav">
-        {CATEGORIES.map(cat => (
-          <a href={`/blog/category/${cat.slug}`} class="pill">{cat.label}</a>
-        ))}
-        <a href="/blog" class="pill pill-active">All articles</a>
-      </nav>
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <p class="hero-label">The guide for remote workers who want to live anywhere</p>
+        <h1 class="hero-title">Work Anywhere</h1>
+        <p class="hero-subtitle">79 deep-dive guides on digital nomad cities, remote jobs, tools, money, and the lifestyle that comes with location independence.</p>
+        <nav class="pill-nav">
+          {CATEGORIES.map(cat => (
+            <a href={`/blog/category/${cat.slug}`} class="pill">{cat.label}</a>
+          ))}
+          <a href="/blog" class="pill pill-active">All articles</a>
+        </nav>
+      </div>
+      <!-- Trending city ticker -->
+      <div class="trending-ticker">
+        <div class="trending-track">
+          {[...trendingCities, ...trendingCities].map((c, i) => (
+            <span class="trending-item">
+              <span class="trending-flag">{i % 8 === 0 ? '🇹🇭' : i % 8 === 1 ? '🇨🇴' : i % 8 === 2 ? '🇻🇳' : i % 8 === 3 ? '🇵🇹' : i % 8 === 4 ? '🇬🇪' : i % 8 === 5 ? '🇲🇽' : i % 8 === 6 ? '🇦🇷' : '🇯🇵'}</span>
+              {c.name}<span class="trending-cost">{c.cost}</span>
+            </span>
+          ))}
+        </div>
+      </div>
     </section>
 
-    <!-- 橫幅長條卡：精選推薦 -->
+    <!-- Featured banner -->
     <section class="banner-card">
       <div class="banner-inner">
         <div class="banner-text">
@@ -43,14 +68,14 @@ function fmtDate(d) { return d.toLocaleDateString('en-US',{year:'numeric',month:
         </div>
         <div class="banner-visual">
           {latest[0].data.heroImage && (
-            <Image src={latest[0].data.heroImage} alt="" width={500} height={300} />
+            <Image src={latest[0].data.heroImage} alt="" width={600} height={360} />
           )}
           <div class="banner-accent"></div>
         </div>
       </div>
     </section>
 
-    <!-- Latest：不規則混合網格 -->
+    <!-- Latest -->
     <section class="sec">
       <header class="sec-head">
         <h2 class="sec-title">Latest</h2>
@@ -79,7 +104,7 @@ function fmtDate(d) { return d.toLocaleDateString('en-US',{year:'numeric',month:
       </div>
     </section>
 
-    <!-- 分類區塊：撞色交錯卡片 -->
+    <!-- Category sections -->
     {grouped.map((group, gi) => (
       <section class="sec">
         <header class="sec-head">
@@ -88,7 +113,7 @@ function fmtDate(d) { return d.toLocaleDateString('en-US',{year:'numeric',month:
         </header>
         <div class="color-grid">
           {group.posts.map((p, pi) => (
-            <a href={`/blog/${p.id}`} class="color-card reveal" style={`--accent: ${group.color}; --accent-light: ${group.color}18`}>
+            <a href={`/blog/${p.id}`} class="color-card reveal">
               {p.data.heroImage && <div class="color-img"><Image src={p.data.heroImage} alt="" width={400} height={260} /></div>}
               <div class="color-body">
                 <h3 class="color-title">{p.data.title}</h3>
@@ -103,7 +128,7 @@ function fmtDate(d) { return d.toLocaleDateString('en-US',{year:'numeric',month:
 
     <!-- Footer -->
     <footer class="site-footer">
-      <p>Curated guides for digital nomads and remote workers. 58 articles on cities, tools, jobs, taxes, and the lifestyle that comes with location independence.</p>
+      <p>The trusted guide for digital nomads and remote workers since 2026. 79 in-depth articles on cities, tools, jobs, taxes, and the lifestyle that comes with location independence.</p>
       <nav>
         <a href="/about">About</a>
         <a href="/blog">Articles</a>
@@ -116,79 +141,240 @@ function fmtDate(d) { return d.toLocaleDateString('en-US',{year:'numeric',month:
 </BaseLayout>
 
 <style>
-  main { max-width: 1280px; margin: 0 auto; padding: 0 2em 3em; }
+  main { max-width: var(--max-width-wide); margin: 0 auto; padding: 0 2em 3em; }
 
   /* === Hero === */
-  .hero { text-align: center; padding: 3.5em 0 2.5em; }
-  .hero-label { font-size: 1.8rem; margin-bottom: 1em; opacity: 0.4; letter-spacing: 0.3em; }
-  .hero-title { font-family: var(--font-heading); font-size: clamp(2.8rem,6vw,4.5rem); font-weight: 400; line-height: 1.04; margin-bottom: 0.45em; color: var(--color-text-heading); }
-  @media (prefers-color-scheme: dark) { .hero-title { color: var(--color-text-heading-dark); } }
-  .hero-subtitle { font-size: 1.05rem; color: var(--color-text-muted); max-width: 520px; margin: 0 auto 2em; line-height: 1.6; }
+  .hero {
+    position: relative;
+    text-align: center;
+    padding: 4em 0 2em;
+    overflow: hidden;
+    border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+    margin-bottom: 2.5em;
+  }
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--color-accent-light) 0%, var(--color-bg) 50%, var(--color-tag-budget-bg) 100%);
+    opacity: 0.6;
+  }
+  @media (prefers-color-scheme: dark) {
+    .hero-bg {
+      background: linear-gradient(135deg, var(--color-accent-light-dark) 0%, var(--color-bg-dark) 60%, var(--color-tag-budget-bg-dark) 100%);
+    }
+  }
+  .hero-content { position: relative; z-index: 2; }
+  .hero-label {
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-text-muted);
+    margin-bottom: 0.8em;
+    font-weight: 500;
+  }
+  .hero-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.8rem, 6.5vw, 4.5rem);
+    font-weight: 400;
+    line-height: 1.04;
+    margin-bottom: 0.3em;
+    color: var(--color-text-heading);
+    letter-spacing: -0.025em;
+  }
+  @media (prefers-color-scheme: dark) {
+    .hero-title { color: var(--color-text-heading-dark); }
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    max-width: 500px;
+    margin: 0 auto 1.8em;
+    line-height: 1.55;
+  }
 
   .pill-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.4em; }
-  .pill { font-size: 0.78rem; color: var(--color-text-heading); text-decoration: none; padding: 0.5em 1.2em; border: 1px solid var(--color-border); border-radius: 100px; transition: all 0.15s; }
-  .pill:hover { background: var(--color-text-heading); color: var(--color-bg); }
-  .pill-active { background: var(--color-text-heading); color: var(--color-bg); }
-  @media (prefers-color-scheme: dark) { .pill { color: var(--color-text-heading-dark); border-color: var(--color-border-dark); } .pill:hover, .pill-active { background: var(--color-text-heading-dark); color: var(--color-bg-dark); } }
+  .pill {
+    font-size: 0.76rem; font-weight: 500;
+    color: var(--color-text-heading); text-decoration: none;
+    padding: 0.5em 1.1em; border: 1px solid var(--color-border);
+    border-radius: 100px; transition: all 0.15s;
+    background: var(--color-elevated);
+  }
+  .pill:hover { background: var(--color-text-heading); color: var(--color-bg); border-color: var(--color-text-heading); }
+  .pill-active { background: var(--color-text-heading); color: var(--color-bg); border-color: var(--color-text-heading); }
+  @media (prefers-color-scheme: dark) {
+    .pill { color: var(--color-text-heading-dark); border-color: var(--color-border-dark); background: var(--color-elevated-dark); }
+    .pill:hover, .pill-active { background: var(--color-text-heading-dark); color: var(--color-bg-dark); border-color: var(--color-text-heading-dark); }
+  }
 
-  /* === 橫幅長條卡 === */
-  .banner-card { margin: 2.5em 0; background: var(--color-text-heading); border-radius: 28px; overflow: hidden; }
-  @media (prefers-color-scheme: dark) { .banner-card { background: var(--color-surface-dark); } }
-  .banner-inner { display: grid; grid-template-columns: 1.2fr 1fr; min-height: 280px; }
-  .banner-text { padding: 2.5em 2.5em 2em; display: flex; flex-direction: column; justify-content: center; }
-  .banner-tag { display: inline-block; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-accent); font-weight: 600; margin-bottom: 0.8em; }
-  .banner-title { font-family: var(--font-heading); font-size: clamp(1.3rem,2vw,1.8rem); font-weight: 400; line-height: 1.15; color: #fff; margin-bottom: 0.4em; }
-  @media (prefers-color-scheme: dark) { .banner-title { color: var(--color-text-heading-dark); } }
-  .banner-desc { font-size: 0.9rem; color: rgba(255,255,255,0.65); line-height: 1.5; margin-bottom: 1.2em; max-width: 440px; }
-  .banner-link { font-size: 0.85rem; color: var(--color-accent); font-weight: 500; }
+  /* === Trending Ticker (nomads.com inspired) === */
+  .trending-ticker {
+    position: relative; z-index: 2;
+    margin-top: 2.5em; padding: 0.6em 0;
+    overflow: hidden;
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+  }
+  @media (prefers-color-scheme: dark) {
+    .trending-ticker { border-color: var(--color-border-dark); }
+  }
+  .trending-track {
+    display: flex; gap: 1.8em;
+    animation: ticker-scroll 30s linear infinite;
+    width: max-content;
+  }
+  .trending-track:hover { animation-play-state: paused; }
+  @keyframes ticker-scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  .trending-item {
+    font-size: 0.82rem; color: var(--color-text-muted);
+    white-space: nowrap; display: flex; align-items: center; gap: 0.35em;
+  }
+  .trending-flag { font-size: 1rem; }
+  .trending-cost {
+    font-size: 0.7rem; font-weight: 600;
+    color: var(--color-tag-budget);
+    background: var(--color-tag-budget-bg);
+    padding: 0.15em 0.5em; border-radius: 100px;
+  }
+
+  /* === Featured Banner === */
+  .banner-card {
+    margin: 2.5em 0; background: var(--color-text-heading);
+    border-radius: var(--radius-xl); overflow: hidden;
+    box-shadow: var(--shadow-card-hover);
+  }
+  @media (prefers-color-scheme: dark) {
+    .banner-card { background: var(--color-elevated-dark); }
+  }
+  .banner-inner {
+    display: grid; grid-template-columns: 1.2fr 1fr; min-height: 280px;
+  }
+  .banner-text {
+    padding: 2.5em; display: flex; flex-direction: column; justify-content: center;
+  }
+  .banner-tag {
+    display: inline-block; font-size: 0.65rem; text-transform: uppercase;
+    letter-spacing: 0.08em; color: var(--color-accent); font-weight: 600; margin-bottom: 0.8em;
+    background: rgba(255,255,255,0.1); padding: 0.25em 0.7em; border-radius: 100px; width: fit-content;
+  }
+  .banner-title {
+    font-family: var(--font-heading); font-size: clamp(1.3rem, 2.2vw, 1.8rem);
+    font-weight: 400; line-height: 1.15; color: #fff; margin-bottom: 0.4em;
+  }
+  @media (prefers-color-scheme: dark) {
+    .banner-title { color: var(--color-text-heading-dark); }
+  }
+  .banner-desc {
+    font-size: 0.88rem; color: rgba(255,255,255,0.6); line-height: 1.5; margin-bottom: 1.2em; max-width: 440px;
+  }
+  .banner-link {
+    font-size: 0.85rem; color: var(--color-accent); font-weight: 500;
+    text-decoration: none; display: inline-flex; align-items: center; gap: 0.3em;
+  }
+  .banner-link:hover { text-decoration: underline; }
   .banner-visual { position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; }
-  .banner-visual img { width: 100%; height: 100%; object-fit: cover; opacity: 0.7; }
-  .banner-accent { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(196,107,74,0.3), transparent 60%); }
-  @media (max-width:700px) { .banner-inner { grid-template-columns: 1fr; } .banner-visual { display: none; } }
+  .banner-visual img { width: 100%; height: 100%; object-fit: cover; opacity: 0.75; border-radius: 0; }
+  .banner-accent {
+    position: absolute; inset: 0;
+    background: linear-gradient(135deg, rgba(91,127,165,0.25), transparent 60%);
+  }
+  @media (max-width:700px) {
+    .banner-inner { grid-template-columns: 1fr; }
+    .banner-visual { display: none; }
+    .banner-text { padding: 1.8em; }
+  }
 
   /* === Section === */
   .sec { margin-bottom: 4em; }
-  .sec-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 1.2em; }
-  .sec-title { font-family: var(--font-heading); font-size: 1.5rem; font-weight: 400; color: var(--color-text-heading); margin: 0; }
-  .sec-link { font-size: 0.8rem; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .sec-head {
+    display: flex; align-items: baseline; justify-content: space-between;
+    margin-bottom: 1.2em; padding-bottom: 0.6em;
+    border-bottom: 1px solid var(--color-border);
+  }
+  @media (prefers-color-scheme: dark) {
+    .sec-head { border-bottom-color: var(--color-border-dark); }
+  }
+  .sec-title {
+    font-family: var(--font-heading); font-size: 1.35rem; font-weight: 400;
+    color: var(--color-text-heading); margin: 0;
+  }
+  .sec-link {
+    font-size: 0.78rem; color: var(--color-text-muted);
+    text-transform: uppercase; letter-spacing: 0.05em; font-weight: 500;
+    text-decoration: none;
+  }
+  .sec-link:hover { color: var(--color-accent); }
 
-  /* === 不規則混合網格 === */
+  /* === Irregular Grid === */
   .irregular-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; grid-template-rows: auto auto; gap: 1em; }
   .irr-0 { grid-row: span 2; }
-  .irr-card { background: var(--color-surface); border-radius: 20px; overflow: hidden; text-decoration: none; color: inherit; transition: transform 0.15s; display: flex; flex-direction: column; }
-  .irr-card:hover { transform: translateY(-2px); }
-  .irr-img img { width: 100%; aspect-ratio: 16/10; object-fit: cover; }
-  .irr-body { padding: 1em 1.2em 1.2em; }
-  .irr-cat { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-accent); font-weight: 600; }
-  .irr-title { font-family: var(--font-heading); font-size: 1rem; font-weight: 400; line-height: 1.2; color: var(--color-text-heading); margin: 0.3em 0; }
-  .irr-date { font-size: 0.75rem; color: var(--color-text-muted); }
-  .irr-small .irr-title { font-size: 0.9rem; }
-  @media (prefers-color-scheme: dark) { .irr-card { background: var(--color-surface-dark); } .irr-title { color: var(--color-text-heading-dark); } }
+  .irr-card {
+    background: var(--color-elevated); border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg); overflow: hidden; text-decoration: none;
+    color: inherit; transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: var(--shadow-card); display: flex; flex-direction: column;
+  }
+  .irr-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-card-hover); }
+  .irr-img img { width: 100%; aspect-ratio: 16/10; object-fit: cover; border-radius: 0; }
+  .irr-body { padding: 1em 1.1em 1.2em; }
+  .irr-cat {
+    font-size: 0.64rem; text-transform: uppercase; letter-spacing: 0.06em;
+    color: var(--color-accent); font-weight: 600;
+  }
+  .irr-title {
+    font-family: var(--font-heading); font-size: 0.95rem; font-weight: 400;
+    line-height: 1.2; color: var(--color-text-heading); margin: 0.3em 0;
+  }
+  .irr-date { font-size: 0.72rem; color: var(--color-text-muted); }
+  .irr-small .irr-title { font-size: 0.85rem; }
+  @media (prefers-color-scheme: dark) {
+    .irr-card { background: var(--color-elevated-dark); border-color: var(--color-border-dark); }
+    .irr-title { color: var(--color-text-heading-dark); }
+  }
   @media (max-width:800px) { .irregular-grid { grid-template-columns: 1fr 1fr; } .irr-0 { grid-row: span 1; } }
   @media (max-width:500px) { .irregular-grid { grid-template-columns: 1fr; } }
 
-  /* === 撞色卡片網格 === */
+  /* === Color Grid Cards === */
   .color-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 1em; }
-  .color-card { background: var(--accent-light); border-radius: 22px; overflow: hidden; text-decoration: none; color: inherit; transition: transform 0.15s; display: flex; flex-direction: column; }
-  .color-card:hover { transform: translateY(-2px); }
-  .color-card:nth-child(2) { background: var(--color-surface); }
-  .color-card:nth-child(3) { background: var(--accent-light); }
-  .color-card:nth-child(4) { background: var(--color-surface); }
-  .color-img img { width: 100%; aspect-ratio: 3/2; object-fit: cover; }
-  .color-body { padding: 1em 1.2em 1.2em; flex: 1; display: flex; flex-direction: column; }
-  .color-title { font-family: var(--font-heading); font-size: 0.95rem; font-weight: 400; line-height: 1.2; color: var(--color-text-heading); margin: 0 0 0.3em; }
-  .color-desc { font-size: 0.78rem; color: var(--color-text-muted); line-height: 1.4; flex: 1; display: -webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow: hidden; }
+  .color-card {
+    background: var(--color-elevated); border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg); overflow: hidden; text-decoration: none;
+    color: inherit; transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: var(--shadow-card); display: flex; flex-direction: column;
+  }
+  .color-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-card-hover); }
+  .color-img img { width: 100%; aspect-ratio: 3/2; object-fit: cover; border-radius: 0; }
+  .color-body { padding: 1em 1.1em 1.2em; flex: 1; display: flex; flex-direction: column; }
+  .color-title {
+    font-family: var(--font-heading); font-size: 0.9rem; font-weight: 400;
+    line-height: 1.2; color: var(--color-text-heading); margin: 0 0 0.3em;
+  }
+  .color-desc {
+    font-size: 0.76rem; color: var(--color-text-muted); line-height: 1.4;
+    flex: 1; display: -webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow: hidden;
+  }
   .color-date { font-size: 0.7rem; color: var(--color-text-muted); margin-top: 0.5em; }
-  @media (prefers-color-scheme: dark) { .color-title { color: var(--color-text-heading-dark); } }
+  @media (prefers-color-scheme: dark) {
+    .color-card { background: var(--color-elevated-dark); border-color: var(--color-border-dark); }
+    .color-title { color: var(--color-text-heading-dark); }
+  }
   @media (max-width:900px) { .color-grid { grid-template-columns: 1fr 1fr; } }
   @media (max-width:500px) { .color-grid { grid-template-columns: 1fr; } }
 
   /* === Footer === */
-  .site-footer { max-width: 600px; margin: 4em auto 1em; text-align: center; }
-  .site-footer p { font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.6; margin: 0 0 0.8em; }
+  .site-footer { max-width: 500px; margin: 4em auto 1em; text-align: center; }
+  .site-footer p { font-size: 0.82rem; color: var(--color-text-muted); line-height: 1.6; margin: 0 0 0.8em; }
   .site-footer nav { display: flex; justify-content: center; gap: 1.5em; margin-bottom: 0.5em; }
-  .site-footer nav a { font-size: 0.82rem; color: var(--color-text-muted); }
-  .footer-copy { font-size: 0.75rem; opacity: 0.5; }
+  .site-footer nav a { font-size: 0.8rem; color: var(--color-text-muted); }
+  .footer-copy { font-size: 0.72rem; opacity: 0.5; }
 
-  @media (max-width:600px) { main { padding: 0 1em 2em; } .hero { padding: 2em 0 1.5em; } .hero-title { font-size: clamp(1.8rem,8vw,2.5rem); } .banner-text { padding: 1.5em; } .sec { margin-bottom: 2.5em; } }
+  @media (max-width:600px) {
+    main { padding: 0 1em 2em; }
+    .hero { padding: 2.5em 0 1.5em; border-radius: 0; }
+    .hero-title { font-size: clamp(1.8rem, 8vw, 2.5rem); }
+    .sec { margin-bottom: 2.5em; }
+  }
 </style>

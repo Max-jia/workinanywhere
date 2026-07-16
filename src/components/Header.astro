@@ -1,11 +1,11 @@
 ---
-// 網站頂部導覽列 — 極簡風格：透明背景 + 純文字連結
 import { NAV_LINKS, SITE_TITLE } from '../consts';
 ---
 
 <header>
   <nav>
     <a href="/" class="logo">
+      <span class="logo-icon">&#x2708;</span>
       <span class="logo-text">{SITE_TITLE}</span>
     </a>
     <div class="nav-links">
@@ -24,56 +24,50 @@ import { NAV_LINKS, SITE_TITLE } from '../consts';
 <style>
   header {
     border-bottom: 1px solid var(--color-border);
+    background: rgba(244,245,240,0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    position: sticky; top: 0; z-index: 100;
   }
-
   @media (prefers-color-scheme: dark) {
     header {
       border-bottom-color: var(--color-border-dark);
+      background: rgba(19,22,20,0.85);
     }
   }
 
   nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: var(--max-width-wide);
-    margin: 0 auto;
-    padding: 0 1.5em;
-    height: 56px;
+    display: flex; align-items: center; justify-content: space-between;
+    max-width: var(--max-width-wide); margin: 0 auto;
+    padding: 0 1.5em; height: 54px;
   }
 
   .logo {
-    font-family: var(--font-heading);
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: var(--color-text-heading);
-    text-decoration: none;
+    font-family: var(--font-heading); font-size: 1.05rem; font-weight: 500;
+    color: var(--color-text-heading); text-decoration: none;
+    display: flex; align-items: center; gap: 0.5em;
   }
-
+  .logo-icon { font-size: 1.1rem; }
   @media (prefers-color-scheme: dark) {
     .logo { color: var(--color-text-heading-dark); }
   }
 
-  .nav-links {
-    display: flex;
-    gap: 1.5em;
-  }
-
+  .nav-links { display: flex; gap: 1.8em; }
   .nav-links a {
-    font-size: 0.85rem;
-    color: var(--color-text-muted);
-    text-decoration: none;
-    transition: color 0.15s;
+    font-size: 0.82rem; color: var(--color-text-muted);
+    text-decoration: none; font-weight: 500;
+    padding: 0.3em 0; transition: color 0.15s;
+    position: relative;
   }
-
+  .nav-links a::after {
+    content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px;
+    background: var(--color-accent); border-radius: 1px;
+    transition: width 0.15s ease;
+  }
+  .nav-links a:hover::after,
+  .nav-links a.current::after { width: 100%; }
   .nav-links a:hover,
-  .nav-links a.current {
-    color: var(--color-text-heading);
-    text-decoration: underline;
-    text-decoration-color: var(--color-accent);
-    text-underline-offset: 4px;
-  }
-
+  .nav-links a.current { color: var(--color-text-heading); }
   @media (prefers-color-scheme: dark) {
     .nav-links a { color: var(--color-text-muted-dark); }
     .nav-links a:hover,
@@ -82,7 +76,7 @@ import { NAV_LINKS, SITE_TITLE } from '../consts';
 
   @media (max-width: 600px) {
     nav { padding: 0 1em; }
-    .nav-links { gap: 1em; }
-    .nav-links a { font-size: 0.8rem; }
+    .nav-links { gap: 1.1em; }
+    .nav-links a { font-size: 0.78rem; }
   }
 </style>
