@@ -7,9 +7,9 @@ export const SITE_DESCRIPTION =
 // 導覽列
 export const NAV_LINKS = [
   { href: '/', label: 'Home' },
+  { href: '/cities', label: 'Cities' },
   { href: '/blog', label: 'Articles' },
   { href: '/about', label: 'About' },
-  { href: '/contact', label: 'Contact' },
 ];
 
 // 文章分類（Taste Skill 規則：單一強調色，不用多色系統）
