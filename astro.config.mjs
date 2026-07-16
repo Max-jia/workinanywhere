@@ -3,10 +3,12 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import { defineConfig, fontProviders } from 'astro/config';
 
+import react from '@astrojs/react';
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://workinanywhere.com',
-  integrations: [mdx(), sitemap()],
+  integrations: [mdx(), sitemap(), react()],
   // 字型設定：標題用 Fraunces（有質感的雜誌風格），內文用 Inter（螢幕閱讀最舒服）
   fonts: [
     {
