@@ -3,7 +3,7 @@ title: 'My Credit Card Got Frozen in Thailand. Here Is What I Wish I Had Set Up 
 description: 'I was standing at a 7-Eleven in Chiang Mai with a cart full of water bottles and my card got declined. No warning. No text. No backup. This is what I should have done before leaving.'
 pubDate: 2026-07-05
 category: finance
-heroImage: ../../assets/finance-cards.jpg
+heroImage: ../../assets/bank-card-closeup.jpg
 ---
 
 It happened at a 7-Eleven in Chiang Mai. I was buying water, sunscreen, and mosquito repellent. My card got declined. I tried again. Declined. I checked my banking app. "Card frozen due to suspicious activity."

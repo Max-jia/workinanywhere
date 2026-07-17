@@ -66,6 +66,39 @@ Not pad thai. Khao soi. It is the dish of northern Thailand, a coconut curry noo
 
 ---
 
-*Accommodation advice from Chiang Mai Ambassador and TravelWake 2026 guides. Banking details from firsthand nomad reports. Prices in THB as of mid-2026.*
+---
+
+## What Everything Costs in Week One
+
+Numbers help. Here is what a realistic first week in Chiang Mai costs, based on mid-2026 prices:
+
+| Item | Cost (THB) | Cost (USD) |
+|------|-----------|-----------|
+| Airport SIM (30-day, 50GB) | 300-600 | $8-17 |
+| Short-term accommodation (6 nights) | 3,000-6,000 | $85-170 |
+| Meals (street food + 1 restaurant/day) | 1,500-2,500 | $42-70 |
+| Grab/songthaew transport | 500-1,000 | $14-28 |
+| Coworking day passes (3 days) | 600-900 | $17-25 |
+| Groceries and supplies | 500-1,000 | $14-28 |
+| **Week one total** | **6,400-12,000** | **$180-340** |
+
+Month two and beyond, once you have a monthly lease and have stopped the startup spending, costs drop significantly. Our survey of [50 nomad budgets](/blog/real-nomad-budgets-from-community) found that nomads in Chiang Mai spend $950 to $1,080 a month living comfortably.
+
+---
+
+## FAQ
+
+**Do I need a visa for Chiang Mai?**
+Most Western passport holders get 60 days visa-free on arrival, extendable by 30 days at the immigration office for 1,900 THB ($54). The Destination Thailand Visa (DTV) allows stays up to 180 days for remote workers and is the best long-term option. For the full picture, see our [guide to 50+ nomad visas](/blog/50-countries-nomad-visas-2026).
+
+**What is the best neighborhood for digital nomads?**
+Nimmanhaemin is the default. Coworking spaces, cafes, and the largest expat concentration. Santitham is cheaper, quieter, and more local. The Old City is charming but more touristy. Try Nimman first. If you want more local flavor, walk Santitham on day two.
+
+**Do I need to speak Thai?**
+No. You can live comfortably in Chiang Mai with English. Learn hello (sawadee khrap/kha), thank you (khop khun khrap/kha), and numbers 1-10. That gets you 90 percent of the way. Anything beyond that earns you genuine goodwill.
+
+---
+
+*Sources: Accommodation advice from Chiang Mai Ambassador, TravelWake 2026 guides, and firsthand nomad reports. Banking and visa details from official Thai immigration sources. Prices in THB as of mid-2026. Data verified as of July 2026.*
 
 **Next reads:** [Chiang Mai vs Medellin: which hub should you pick?](/blog/chiang-mai-vs-medellin-2026) · [Da Nang digital nomad guide](/blog/da-nang-remote-work-guide-2026) · [How to book long-stay accommodation without getting scammed](/blog/book-long-stay-accommodation-guide)

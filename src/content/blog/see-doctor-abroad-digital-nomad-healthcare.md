@@ -58,6 +58,38 @@ Know your insurance policy number and have it saved offline. Know whether your p
 
 ---
 
-*Insurance information from AXA Global Healthcare, Now Health International, Pacific Prime, and provider websites, verified July 2026. Healthcare experiences are general patterns — always verify your specific coverage before traveling.*
+---
+
+## What Medical Care Costs in Popular Nomad Destinations
+
+These are typical out-of-pocket prices before insurance reimbursement, based on 2026 data:
+
+| Country | GP Visit | Specialist | Dental Cleaning | Emergency Room |
+|---------|----------|-----------|----------------|----------------|
+| Thailand | $15-35 | $25-60 | $30-50 | $50-150 |
+| Vietnam | $10-25 | $20-50 | $20-40 | $40-100 |
+| Mexico | $20-40 | $35-70 | $30-60 | $60-200 |
+| Portugal | $40-70 | $70-120 | $50-80 | $100-250 |
+| Colombia | $15-30 | $25-55 | $25-50 | $50-130 |
+| Spain | $50-100 | $80-150 | $60-100 | $150-350 |
+
+In most Southeast Asian and Latin American countries, a doctor visit costs less than your insurance copay would in the US. The quality of care in private hospitals in Bangkok, Chiang Mai, Mexico City, and Medellin matches or exceeds what you would get at home. The difference is the price tag, not the standard of care.
+
+---
+
+## FAQ
+
+**Can I use my home country health insurance abroad?**
+Almost never for routine care. US health insurance, including Medicare, does not cover treatment outside the US. UK NHS coverage ends when you leave the UK for more than six months. Get a dedicated [international health plan](/blog/travel-insurance-digital-nomads-2026) before you leave.
+
+**What if I have a pre-existing condition?**
+Most travel insurance plans exclude pre-existing conditions. International health insurance plans like Genki cover them after a waiting period of 8 to 24 months depending on the condition. Do not lie on your application. If your claim is investigated and the insurer discovers an undisclosed condition, the claim will be denied and your policy may be canceled.
+
+**How do I find an English-speaking doctor right now?**
+Open your insurer's app and use the "Find Care" or provider search feature. Alternatively, Google "[city name] international hospital" and look for hospitals with JCI accreditation, which requires English-speaking staff. Most private hospitals in major cities have English-speaking doctors.
+
+---
+
+*Sources: AXA Global Healthcare, Now Health International, Pacific Prime, Cigna, and provider websites. Cost data from Numbeo, firsthand nomad reports, and International Medical Travel Journal 2026. Data verified as of July 2026.*
 
 **Next reads:** [SafetyWing vs World Nomads vs Genki: nomad insurance compared](/blog/travel-insurance-digital-nomads-2026) · [How to stay fit and healthy as a nomad](/blog/stay-healthy-fitness-digital-nomad) · [Digital security for remote workers](/blog/digital-security-remote-workers-2026)

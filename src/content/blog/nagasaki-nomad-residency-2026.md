@@ -66,4 +66,21 @@ Japan is playing the long game. If this works — and the first year suggests it
 
 ---
 
-**Next reads:** [Tokyo digital nomad guide](/blog/tokyo-digital-nomad-guide-2026) · [Digital nomad visas in 50+ countries](/blog/se-asia-nomad-visa-race-2026) · [How to build a social life as a nomad](/blog/build-social-life-digital-nomad)
+---
+
+## FAQ
+
+**Can anyone apply for the Nagasaki Nomad Residency?**
+Remote workers of any nationality can apply. You need to demonstrate stable income from outside Japan, have health insurance valid in Japan, and commit to the full residency period. The program prioritizes applicants who can contribute to the local community through skills sharing, workshops, or content creation.
+
+**How much does it cost to live in Nagasaki?**
+Monthly costs run $900 to $1,500 for a comfortable solo lifestyle. Rent for a furnished apartment is $400 to $700. Eating out is cheaper than Tokyo by 30 to 40 percent. For comparison with other Japanese cities, see our [Tokyo digital nomad guide](/blog/tokyo-digital-nomad-guide-2026).
+
+**Is Nagasaki worth it compared to other nomad destinations?**
+It depends on what you want. Southeast Asia is cheaper. Europe has better infrastructure. What Nagasaki offers that almost nowhere else does: a structured program with institutional support, deep cultural immersion, and a genuine relationship with a local community. If you want to check boxes on a destination list, skip it. If you want a story you will tell for the rest of your life, apply.
+
+---
+
+*Sources: Nagasaki Prefecture official residency program documentation (2026). Cost of living data from Numbeo and firsthand reports. Data verified as of July 2026.*
+
+**Next reads:** [Tokyo digital nomad guide](/blog/tokyo-digital-nomad-guide-2026) · [Digital nomad visas in 50+ countries](/blog/50-countries-nomad-visas-2026) · [How to build a social life as a nomad](/blog/build-social-life-digital-nomad)
