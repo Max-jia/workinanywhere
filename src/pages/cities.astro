@@ -1,13 +1,13 @@
 ---
 import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import cityBangkok from '../assets/city-bangkok.jpg';
+import chiangMaiTemple from '../assets/chiang-mai-temple.jpg';
 import cityMedellin from '../assets/city-medellin.jpg';
 import lisbonCity from '../assets/lisbon-city.jpg';
-import cityBeach from '../assets/city-beach.jpg';
+import daNangBeach from '../assets/da-nang-beach.jpg';
 import baliTemple from '../assets/bali-temple.jpg';
-import cityBarcelona from '../assets/city-barcelona.jpg';
-import cityTbilisi from '../assets/city-tbilisi.jpg';
+import barcelonaNew from '../assets/barcelona-new.jpg';
+import tbilisiNew from '../assets/tbilisi-new.jpg';
 import cityTokyo from '../assets/city-tokyo.jpg';
 import mexicoCityAerial from '../assets/mexico-city-aerial.jpg';
 import newZealandMountain from '../assets/new-zealand-mountain.jpg';
@@ -16,19 +16,19 @@ import croatiaCity from '../assets/croatia-city.jpg';
 import bulgariaSofia from '../assets/bulgaria-sofia.jpg';
 import cityValencia from '../assets/city-valencia.jpg';
 import japanNagasaki from '../assets/japan-nagasaki.jpg';
-import cityParis from '../assets/city-paris.jpg';
+import buenosAiresCity from '../assets/buenos-aires-city.jpg';
 
 const cities = [
-  { slug: 'chiang-mai', name: 'Chiang Mai', country: 'Thailand', flag: '🇹🇭', cost: '$600-900/mo', img: cityBangkok, desc: 'The most popular first stop for digital nomads. Reliable infrastructure, huge community, unbeatable value.' },
+  { slug: 'chiang-mai', name: 'Chiang Mai', country: 'Thailand', flag: '🇹🇭', cost: '$600-900/mo', img: chiangMaiTemple, desc: 'The most popular first stop for digital nomads. Reliable infrastructure, huge community, unbeatable value.' },
   { slug: 'medellin', name: 'Medellin', country: 'Colombia', flag: '🇨🇴', cost: '$800-1,200/mo', img: cityMedellin, desc: 'Springlike climate, 2-year DN visa, and the strongest nomad community in Latin America.' },
   { slug: 'lisbon', name: 'Lisbon', country: 'Portugal', flag: '🇵🇹', cost: '$1,500-2,200/mo', img: lisbonCity, desc: 'Europe\'s entry point. Sun, sea, and a path to EU residency through the D8 visa.' },
-  { slug: 'da-nang', name: 'Da Nang', country: 'Vietnam', flag: '🇻🇳', cost: '$650-900/mo', img: cityBeach, desc: 'Southeast Asia\'s best-value beach city. Clean, modern, still under the radar.' },
+  { slug: 'da-nang', name: 'Da Nang', country: 'Vietnam', flag: '🇻🇳', cost: '$650-900/mo', img: daNangBeach, desc: 'Southeast Asia\'s best-value beach city. Clean, modern, still under the radar.' },
   { slug: 'bali', name: 'Bali', country: 'Indonesia', flag: '🇮🇩', cost: '$800-1,300/mo', img: baliTemple, desc: 'Coworking culture, surf towns, rice terraces. A nomad scene that has evolved beyond backpackers.' },
-  { slug: 'barcelona', name: 'Barcelona', country: 'Spain', flag: '🇪🇸', cost: '$1,600-2,400/mo', img: cityBarcelona, desc: 'Mediterranean lifestyle, world-class architecture, thriving remote work community.' },
-  { slug: 'tbilisi', name: 'Tbilisi', country: 'Georgia', flag: '🇬🇪', cost: '$700-1,100/mo', img: cityTbilisi, desc: '1-year visa-free, 1% small business tax, and a creative scene that punches above its weight.' },
+  { slug: 'barcelona', name: 'Barcelona', country: 'Spain', flag: '🇪🇸', cost: '$1,600-2,400/mo', img: barcelonaNew, desc: 'Mediterranean lifestyle, world-class architecture, thriving remote work community.' },
+  { slug: 'tbilisi', name: 'Tbilisi', country: 'Georgia', flag: '🇬🇪', cost: '$700-1,100/mo', img: tbilisiNew, desc: '1-year visa-free, 1% small business tax, and a creative scene that punches above its weight.' },
   { slug: 'tokyo', name: 'Tokyo', country: 'Japan', flag: '🇯🇵', cost: '$1,400-2,200/mo', img: cityTokyo, desc: 'Weak yen makes Tokyo accessible. World-class infrastructure at a fraction of the old cost.' },
   { slug: 'mexico-city', name: 'Mexico City', country: 'Mexico', flag: '🇲🇽', cost: '$1,000-1,600/mo', img: mexicoCityAerial, desc: 'A cultural powerhouse with neighborhoods purpose-built for remote workers.' },
-  { slug: 'buenos-aires', name: 'Buenos Aires', country: 'Argentina', flag: '🇦🇷', cost: '$800-1,300/mo', img: cityParis, desc: 'European architecture, Latin energy, favorable for dollar earners.' },
+  { slug: 'buenos-aires', name: 'Buenos Aires', country: 'Argentina', flag: '🇦🇷', cost: '$800-1,300/mo', img: buenosAiresCity, desc: 'European architecture, Latin energy, favorable for dollar earners.' },
   { slug: 'new-zealand', name: 'New Zealand', country: 'New Zealand', flag: '🇳🇿', cost: '$2,000-2,800/mo', img: newZealandMountain, desc: 'Stunning nature, relaxed visa rules, rock-solid infrastructure.' },
   { slug: 'costa-rica', name: 'Costa Rica', country: 'Costa Rica', flag: '🇨🇷', cost: '$1,200-2,000/mo', img: costaRicaNature, desc: 'Pura vida lifestyle. Straightforward DN visa, two coastlines, nature everywhere.' },
   { slug: 'croatia', name: 'Croatia', country: 'Croatia', flag: '🇭🇷', cost: '$1,500-2,200/mo', img: croatiaCity, desc: 'First EU DN visa. Adriatic coast, fast fiber, Mediterranean living at a discount.' },

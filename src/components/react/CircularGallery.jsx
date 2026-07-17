@@ -312,11 +312,13 @@ class Media {
 }
 
 class App {
-  constructor(container, { items, bend, textColor = '#ffffff', borderRadius = 0, font = 'bold 30px Figtree', scrollSpeed = 2, scrollEase = 0.05 } = {}) {
+  constructor(container, { items, bend, textColor = '#ffffff', borderRadius = 0, font = 'bold 30px Figtree', scrollSpeed = 2, scrollEase = 0.05, onCardClick } = {}) {
     document.documentElement.classList.remove('no-js');
     this.container = container;
     this.scrollSpeed = scrollSpeed;
     this.scroll = { ease: scrollEase, current: 0, target: 0, last: 0 };
+    this.onCardClick = onCardClick;
+    this.originalLength = items ? items.length : 0;
     this.onCheckDebounce = debounce(this.onCheck, 200);
     this.createRenderer(); this.createCamera(); this.createScene();
     this.onResize(); this.createGeometry();
@@ -398,6 +400,14 @@ class App {
     const direction = this.scroll.current > this.scroll.last ? 'right' : 'left';
     if (this.medias) {
       this.medias.forEach(media => media.update(this.scroll, direction));
+      if (this.originalLength > 0) {
+        let bestIdx = 0, bestDist = Infinity;
+        this.medias.forEach((m, i) => {
+          const dist = Math.abs(m.plane.position.x);
+          if (dist < bestDist) { bestDist = dist; bestIdx = i; }
+        });
+        this.container.dataset.activeIndex = String(bestIdx % this.originalLength);
+      }
     }
     this.renderer.render({ scene: this.scene, camera: this.camera });
     this.scroll.last = this.scroll.current;
@@ -420,6 +430,7 @@ class App {
     window.addEventListener('touchmove', this.boundOnTouchMove);
     window.addEventListener('touchend', this.boundOnTouchUp);
     this.container?.addEventListener('keydown', this.boundOnKeyDown);
+    this.gl.canvas.style.cursor = 'pointer';
   }
   destroy() {
     window.cancelAnimationFrame(this.raf);
@@ -441,7 +452,8 @@ class App {
 
 export default function CircularGallery({
   items, bend = 3, textColor = '#ffffff', borderRadius = 0.05,
-  font = 'bold 30px Figtree', fontUrl, scrollSpeed = 2, scrollEase = 0.05
+  font = 'bold 30px Figtree', fontUrl, scrollSpeed = 2, scrollEase = 0.05,
+  onCardClick
 }) {
   const containerRef = useRef(null);
   useEffect(() => {
@@ -450,7 +462,7 @@ export default function CircularGallery({
     let isMounted = true;
     resolveFont(font, fontUrl).then(resolvedFont => {
       if (!isMounted || !containerRef.current) return;
-      app = new App(containerRef.current, { items, bend, textColor, borderRadius, font: resolvedFont, scrollSpeed, scrollEase });
+      app = new App(containerRef.current, { items, bend, textColor, borderRadius, font: resolvedFont, scrollSpeed, scrollEase, onCardClick });
     });
     return () => { isMounted = false; if (app) app.destroy(); };
   }, [items, bend, textColor, borderRadius, font, fontUrl, scrollSpeed, scrollEase]);
