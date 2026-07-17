@@ -48,6 +48,21 @@ Do not use a debit card for everyday purchases. If your debit card gets skimmed 
 
 ---
 
-*Card acceptance and fee information from firsthand reports and banking policy documentation, mid-2026. Specific card recommendations reflect currently available products and terms.*
+---
 
-**Next reads:** [The foreign transaction fee trick your bank hopes you never notice](/blog/avoid-foreign-transaction-fees-travel) · [My credit card got frozen abroad](/blog/credit-card-frozen-abroad-what-to-do) · [Best travel credit cards for nomads](/blog/best-travel-credit-cards-2026)
+## FAQ
+
+**Which US credit cards work in Thailand?**
+Visa and Mastercard are accepted almost everywhere. American Express is accepted at major hotels and malls but rejected at most smaller businesses. Discover is rarely accepted. Bring at least one Visa or Mastercard.
+
+**Should I use a credit card or cash in Thailand?**
+Credit cards work at malls, hotels, and chain stores. Cash is required for street food, night markets, songthaews (red trucks), and most smaller shops. Carry 1,000-2,000 THB in small bills and withdraw more when needed. ATMs charge 220 THB per withdrawal, so withdraw larger amounts less frequently.
+
+**Do I need more than one credit card?**
+Yes. Have at least two from different banks. If one gets frozen, the other keeps working. For the full setup including which cards earn the most rewards abroad, see our [comprehensive digital nomad credit card guide](/blog/digital-nomad-credit-card-guide-2026).
+
+---
+
+*Sources: Card acceptance and fee information from firsthand reports and banking policy documentation, mid-2026. Data verified as of July 2026.*
+
+**Next reads:** [Digital nomad credit card guide: avoid fees and earn rewards](/blog/digital-nomad-credit-card-guide-2026) · [Best travel credit cards for nomads](/blog/best-travel-credit-cards-2026) · [Wise vs Revolut for digital nomads](/blog/banking-across-borders-wise-revolut-2026)

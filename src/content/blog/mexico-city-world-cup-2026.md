@@ -71,6 +71,21 @@ But if you want to work remotely during this tournament without spending a fortu
 
 ---
 
-*Cost data from IndexBox and Numbeo. Internet speed data from 20i World Cup study. Coworking data from CoworkingCafe, July 2026.*
+---
+
+## FAQ
+
+**Is Mexico City safe during the World Cup?**
+Yes, especially in Roma Norte, Condesa, Juarez, and Polanco. These neighborhoods are busy, well-policed, and full of locals and visitors. Use Uber at night, avoid isolated streets, and follow the same common-sense precautions you would in any major city. The World Cup brings more crowds and more police presence.
+
+**Can I work remotely from Mexico City during the tournament?**
+Yes. Internet in Roma and Condesa is reliable (50-100 Mbps). Coworking spaces are plentiful. The main challenges are time zone alignment with your team and the altitude adjustment in the first few days. Mexico City is in the Central Time Zone, which aligns with US working hours.
+
+**Where should I stay in Mexico City as a remote worker?**
+Roma Norte and Condesa are the best neighborhoods for cafes, coworking, and walkability. Juarez is slightly cheaper and next door. See our [full Mexico City neighborhood guide](/blog/mexico-city-neighborhood-guide-2026) for rent prices and local vibe by area.
+
+---
+
+*Sources: Cost data from IndexBox and Numbeo, internet speed data from 20i World Cup study, coworking data from CoworkingCafe. Data verified as of July 2026.*
 
 **Next reads:** [World Cup host cities ranked for remote workers](/blog/world-cup-remote-work-host-cities) · [Mexico City neighborhood guide](/blog/mexico-city-neighborhood-guide-2026) · [Best eSIMs for digital nomads](/blog/best-esim-digital-nomad-2026)

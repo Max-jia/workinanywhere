@@ -1,5 +1,5 @@
 ---
-title: 'Digital Nomad Taxes in 2026: 10 Questions to Ask Before You Leave'
+title: 'Digital Nomad Taxes in 2026: 10 Questions to Ask a Cross-Border Specialist Before You Leave'
 description: 'Taxes are the most dangerous blind spot for new digital nomads. Here are the questions you should ask a cross-border tax specialist — before you make a costly mistake.'
 pubDate: 2026-04-14
 category: finance

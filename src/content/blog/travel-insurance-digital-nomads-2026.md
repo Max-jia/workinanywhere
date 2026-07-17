@@ -1,5 +1,5 @@
 ---
-title: 'SafetyWing vs World Nomads vs Genki (2026): Best Nomad Insurance Compared'
+title: 'SafetyWing vs World Nomads vs Genki: Which Is the Best Digital Nomad Insurance in 2026? (Real Claims Data)'
 description: 'An evidence-based comparison of the three most popular digital nomad insurance plans — coverage, pricing, claims experience, and which one fits your situation.'
 pubDate: 2026-05-04
 category: tools

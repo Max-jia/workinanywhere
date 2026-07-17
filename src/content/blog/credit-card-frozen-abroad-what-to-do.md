@@ -60,6 +60,21 @@ Withdraw from an ATM inside a bank branch during business hours. If the machine 
 
 ---
 
-*Banking practices described reflect common nomad experiences. Check your specific bank's international policies before traveling.*
+---
 
-**Next reads:** [Wise vs Revolut for digital nomads](/blog/banking-across-borders-wise-revolut-2026) · [Best travel credit cards for nomads](/blog/best-travel-credit-cards-2026) · [How to manage money with irregular income](/blog/digital-nomad-money-management-2026)
+## FAQ
+
+**Why do banks freeze cards when you travel abroad?**
+Fraud detection algorithms flag purchases outside your normal spending pattern. If your card is usually swiped in San Francisco and suddenly buys pad thai in Chiang Mai, the algorithm assumes theft. Setting travel notifications and carrying backup cards from different banks prevents this from becoming a crisis.
+
+**What should I do immediately after my card is frozen?**
+Call the international number for your bank (save it offline before you leave). Verify your identity. Ask them to unfreeze the card and add a frequent traveler flag to your account. This prevents future freezes. If the first agent cannot help, ask for the fraud department directly.
+
+**How many credit cards should I bring as a digital nomad?**
+At least two from different banks, plus a debit card for ATM withdrawals. Never rely on a single card. For the full breakdown of which cards earn rewards, avoid fees, and work best abroad, see our [comprehensive credit card guide for digital nomads](/blog/digital-nomad-credit-card-guide-2026).
+
+---
+
+*Sources: Banking practices described reflect common nomad experiences and major bank policy documentation. Data verified as of July 2026.*
+
+**Next reads:** [Digital nomad credit card guide: avoid fees and earn rewards](/blog/digital-nomad-credit-card-guide-2026) · [Wise vs Revolut for digital nomads](/blog/banking-across-borders-wise-revolut-2026) · [How to manage money with irregular income](/blog/digital-nomad-money-management-2026)
