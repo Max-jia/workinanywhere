@@ -1,7 +1,7 @@
 ---
 title: "Best Places to Work Remotely in Latin America 2026: 8 Cities With Real Costs"
 description: "Latin America is the fastest-growing remote work region in 2026. Here are 8 cities across Mexico, Colombia, Brazil, Argentina, and Costa Rica with real monthly budgets, visa rules, and what to expect."
-pubDate: 2026-07-31
+pubDate: 2026-07-20
 category: city-guides
 heroImage: ../../assets/latam-remote-work.jpg
 ---

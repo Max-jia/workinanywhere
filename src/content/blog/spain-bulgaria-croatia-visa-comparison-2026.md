@@ -1,7 +1,7 @@
 ---
 title: "Spain vs Bulgaria vs Croatia 2026: Which EU Digital Nomad Visa Is Best for You?"
 description: "A real comparison of Spain, Bulgaria, and Croatia digital nomad visas for 2026: income requirements, tax rates, cost of living, and the honest trade-offs of each."
-pubDate: 2026-07-29
+pubDate: 2026-07-20
 category: finance
 heroImage: ../../assets/europe-flag-compare.jpg
 ---

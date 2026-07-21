@@ -1,7 +1,7 @@
 ---
 title: "How to Get Spain's Digital Nomad Visa in 2026: Application Guide, Real Costs, and Tax Rules"
 description: "Everything you need to know about Spain's digital nomad visa in 2026: the €2,849/month income requirement, two application routes, Beckham Law tax savings, and the mistakes that get applications rejected."
-pubDate: 2026-07-22
+pubDate: 2026-07-17
 category: finance
 heroImage: ../../assets/city-madrid.jpg
 ---

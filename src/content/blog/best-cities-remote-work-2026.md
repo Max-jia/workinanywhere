@@ -1,7 +1,7 @@
 ---
 title: 'Best Places to Work Remotely 2026: 15 Cities With Real Cost Data and Visa Rules'
 description: 'Looking for the best places to work remotely? After 3 years bouncing between nomad hubs, here are 15 cities I actually recommend — with real budgets, visa breakdowns, and the stuff nobody tells you.'
-pubDate: 2026-07-28
+pubDate: 2026-07-19
 category: city-guides
 heroImage: ../../assets/city-skyline.jpg
 ---
