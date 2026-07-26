@@ -3,20 +3,20 @@ title: 'My Credit Card Got Frozen in Thailand. Here Is What I Wish I Had Set Up 
 description: 'I was standing at a 7-Eleven in Chiang Mai with a cart full of water bottles and my card got declined. No warning. No text. No backup. This is what I should have done before leaving.'
 pubDate: 2026-07-05
 category: finance
-heroImage: ../../assets/bank-card-closeup.jpg
+hasFAQ: true
 ---
 
 It happened at a 7-Eleven in Chiang Mai. I was buying water, sunscreen, and mosquito repellent. My card got declined. I tried again. Declined. I checked my banking app. "Card frozen due to suspicious activity."
 
 No warning text. No email. Just a frozen card and a growing line of people behind me.
 
-I had a second card. It was in my luggage, back at the apartment, a twenty-minute scooter ride away. I paid with the cash in my wallet and spent the ride home thinking about how much worse this could have been if I had been checking out of a hotel or trying to pay for a flight.
+I had a second card. It was in my luggage, back at the apartment, a twenty minute scooter ride away. I paid with the cash in my wallet and spent the ride home thinking about how much worse this could have been if I had been checking out of a hotel or trying to pay for a flight.
 
 Do this before you leave.
 
 ---
 
-## The Three-Card System
+## The three card system
 
 Carry two physical cards from different banks on different networks. Visa from Chase, Mastercard from Capital One. Store them in separate places. If one gets frozen, lost, or eaten by an ATM, you have the other.
 
@@ -26,25 +26,25 @@ Keep a third card locked in your apartment safe or hidden in your luggage. This 
 
 ---
 
-## Notify Your Bank, Then Do Not Trust That They Noted It
+## Notify your bank, then do not trust that they noted it
 
 I told my bank I was traveling. I gave them dates and countries. They still froze my card.
 
 Banks use automated fraud detection that does not always consult the travel notice you filed. The algorithm sees a 7-Eleven purchase in Thailand at 10pm local time and flags it regardless of what the customer service agent typed into your account notes three days earlier.
 
-Nomad-friendly fintechs handle this better than traditional banks. Wise, Revolut, and N26 let you toggle travel mode in the app. No phone calls. No hold music. You land, you toggle, you spend. Traditional banks require a phone call and then might freeze your card anyway.
+Nomad friendly fintechs handle this better than traditional banks. Wise, Revolut, and N26 let you toggle travel mode in the app. No phone calls. No hold music. You land, you toggle, you spend. Traditional banks require a phone call and then might freeze your card anyway.
 
 ---
 
-## Freeze and Unfreeze From the App
+## Freeze and unfreeze from the app
 
 Most banking apps now let you freeze your own card instantly. If you see a suspicious charge, freeze it yourself in five seconds. If your card gets declined and it turns out to be a false alarm, unfreeze it and try again. You do not need to call anyone.
 
-Before you travel, confirm that your banking app allows self-service freeze and unfreeze. If it does not, open an account with one that does.
+Before you travel, confirm that your banking app allows self service freeze and unfreeze. If it does not, open an account with one that does.
 
 ---
 
-## International Helpline Numbers, Saved Offline
+## International helpline numbers, saved offline
 
 If the app does not unfreeze your card, you need to call the bank. You cannot do this if you are staring at a declined terminal and Googling the international helpline number on bad WiFi.
 
@@ -52,7 +52,7 @@ Save the number in your phone notes. Write it on a piece of paper in your wallet
 
 ---
 
-## Cash Is Infrastructure
+## Cash is infrastructure
 
 Carry enough local currency to get through at least two days without any cards. In Thailand, street food stalls, songthaews, and many smaller shops take only cash. If both your cards are frozen and you have no cash, you cannot eat.
 

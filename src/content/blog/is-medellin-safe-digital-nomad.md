@@ -1,52 +1,59 @@
 ---
 title: 'Is Medellin Safe for Digital Nomads? The Honest Answer Nobody Puts in Travel Guides.'
-description: 'You will hear two things about Medellin. That it is perfectly safe, and that you will get robbed the moment you land. Neither is true. Here is what you actually need to know before you go.'
+description: 'People told me Medellin was either perfectly safe or a war zone. After months of living here, neither was true. Here is what I learned, who I talked to, and the rules I follow.'
 pubDate: 2026-07-09
 category: city-guides
-heroImage: ../../assets/city-medellin.jpg
 ---
 
-Everyone has a strong opinion about Medellin. People who spent two weeks in El Poblado tell you it is perfectly safe. People who read news headlines tell you it is a war zone. Both are wrong.
+Everyone has a strong opinion about Medellin. Someone who spent two weeks in an El Poblado Airbnb will tell you it is perfectly safe. Someone who reads headlines about Colombia will tell you it is a war zone. Neither of them is right, and both of those takes annoy me.
 
-I have spent months here across multiple stays. I have walked home at 2am through Laureles, taken the metro at rush hour, and left my laptop at a cafe table while getting coffee. I have also had a friend get his phone snatched from his hand on a street corner, and another who ignored advice about which neighborhoods to avoid and paid for it.
+I have spent months here across multiple stays. I walked home at 2am through Laureles more times than I can count. I took the metro at rush hour when it was packed. I left my laptop on a cafe table while I went to get coffee, and nobody touched it. I also had a friend get his phone ripped from his hand on a street corner in broad daylight. Another friend ignored every warning about which neighborhoods to avoid and ended up in a situation he still will not describe in detail.
 
-Here is the honest answer.
-
----
-
-## Yes, If You Stay in the Right Places
-
-El Poblado and Laureles are the neighborhoods where digital nomads and expats live. They are safe during the day and reasonably safe at night if you take basic precautions. Do not walk alone through empty streets after midnight. Do not flash expensive jewelry or the latest iPhone while walking down the sidewalk. Use Uber rather than hailing taxis. These are not Medellin-specific rules. They are big-city rules that apply everywhere from Barcelona to Bangkok.
-
-The difference in Medellin is that the safety gradient is steeper. The distance between a safe neighborhood and an unsafe one can be a few blocks, not a few miles. Stay in El Poblado or Laureles. Do not wander into unfamiliar areas without knowing where you are going. Ask locals which streets to avoid. They will tell you.
+So here is what I actually know, after all of that.
 
 ---
 
-## Phone Snatching Is the Real Risk
+## Yes, if you stay in the right places
 
-Violent crime against foreigners in Medellin's nomad neighborhoods is rare. Petty theft is not. The most common incident is phone snatching. Someone on a motorbike grabs your phone from your hand while you are walking on the sidewalk, checking Google Maps, or taking a photo. It happens fast and it happens to people who are not paying attention.
+El Poblado and Laureles are the neighborhoods where digital nomads and expats live. Both are safe during the day and reasonably safe at night, as long as you do not treat them like a resort. Do not walk alone through empty streets after midnight. Do not hold the newest iPhone in your hand while walking down the sidewalk. Use Uber instead of hailing taxis off the street.
 
-The fix is simple. Do not hold your phone in your hand while walking on the street. If you need to check directions, step inside a store or cafe. Take photos with awareness of your surroundings. Keep your phone in your pocket or bag when you are moving. This removes 90% of the risk.
+None of this is unique to Medellin. These are big-city rules that apply just as much in Barcelona, Mexico City, or Bangkok.
 
----
-
-## Dating Apps Have a Specific Risk
-
-This is uncomfortable to write but necessary. Medellin has a well-documented problem with dating app scams targeting foreign men. The pattern is consistent. You match with someone. You meet for drinks. You wake up hours later with your apartment cleaned out and no memory of what happened. Scopolamine, a drug that induces amnesia and compliance, is the common method.
-
-This is not a reason to avoid Medellin. It is a reason to avoid bringing strangers you met on Tinder back to your apartment. Meet in public. Tell a friend where you are going. If someone you just matched with is unusually eager to come to your place, treat that as the red flag it is.
+What is different here is how fast the safety picture changes. The gap between a safe block and one you should avoid is often measured in streets, not miles. Stay in El Poblado or Laureles. Do not wander into unfamiliar areas unless you know exactly where you are going. Ask locals which streets to skip. They will tell you, and they are almost never wrong about it.
 
 ---
 
-## The Metro Is Safe. Use It.
+## Phone snatching is the real risk
 
-Medellin's metro system is clean, efficient, and safe. It connects the city in ways that make driving unnecessary for most nomads. The cable cars that extend up into the hillside neighborhoods are functional public transit used by thousands of locals every day. Do not treat them like a tourist attraction. Treat them like the metro. They are safe.
+Violent crime against foreigners in Medellin's nomad neighborhoods is rare. I mean that. In all my time here, in all the people I know, I have not heard a single story of a foreigner being physically attacked in El Poblado or Laureles.
+
+Petty theft is a different story. Phone snatching is the one you hear about again and again. Someone on a motorbike rides past and grabs the phone right out of your hand while you check Google Maps or take a photo. It takes one second. It happens to people who are not paying attention, and it happens more often than locals like to admit.
+
+I have a rule for this and it is not complicated. I do not hold my phone in my hand while I walk on the street. Period. If I need to check directions, I step inside a store or a cafe first. If I want to take a photo, I look around before I pull the phone out. I keep it in my pocket or my bag when I am moving. This one habit removes most of the risk. I have followed it for months and never had a problem.
 
 ---
 
-## The Bottom Line
+## Dating apps have a specific risk
 
-Medellin is as safe as your behavior. Stay in the right neighborhoods. Pay attention on the street. Do not date recklessly. Ask locals for advice and follow it. Tens of thousands of digital nomads have lived here without incident. The ones who get into trouble almost always ignored one of the rules above. Do not be that person.
+I do not enjoy writing this section, but it would be irresponsible to skip it. Medellin has a well documented problem with dating app scams that target foreign men. The pattern is almost always the same. You match with someone. You meet for drinks. You wake up hours later with your apartment emptied out and no memory of how it happened. The method is usually scopolamine, a drug that makes you compliant and wipes your short-term memory.
+
+I am not saying you should avoid Medellin because of this. I am saying you should avoid bringing someone you met on Tinder twenty minutes ago back to your apartment. Meet in public. Tell a friend where you are going and who you are meeting. If someone you just matched with seems unusually eager to come to your place, treat that as the red flag it obviously is. The men I know who got drugged all ignored at least one of these precautions. Every single one.
+
+---
+
+## The metro is safe. Use it.
+
+Medellin's metro is clean, runs on time, and is genuinely safe. It connects the valley in ways that make a car unnecessary for most nomads. I used it almost every day.
+
+The cable cars that extend into the hillside neighborhoods are not a tourist gimmick. They are real public transit used by thousands of locals to get to work every morning. Ride them like you would ride any metro. They are safe. Just do not block the doors taking photos and you will fit in fine.
+
+---
+
+## What I tell friends who ask
+
+Medellin is as safe as your own behavior makes it. I believe this after living here. Stay in the right neighborhoods. Pay attention to what is happening around you on the street. Do not date like an idiot. Ask locals what they recommend and then actually follow the advice. Most people who get into trouble ignored one of these things. I have watched it happen.
+
+The city is worth experiencing. Just be honest with yourself about whether you are willing to follow the rules that keep you safe here. If you are, you will have a great time.
 
 ---
 

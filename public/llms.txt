@@ -1,0 +1,33 @@
+# Work Anywhere
+
+A curated resource for digital nomads and remote workers — city guides, visa breakdowns, job hunting, tools, finance, and lifestyle. Based on firsthand experience and community research, updated regularly through 2026.
+
+## Core guides
+
+- [Best places to work remotely 2026](https://workinanywhere.com/blog/best-cities-remote-work-2026): 15 cities with real cost data and visa rules
+- [How to become a digital nomad 2026](https://workinanywhere.com/blog/how-to-become-digital-nomad-2026): Step-by-step path from zero to location independent
+- [Spain digital nomad visa 2026](https://workinanywhere.com/blog/spain-digital-nomad-visa-2026): Application guide, real costs, tax rules
+- [Best digital nomad destinations compared](https://workinanywhere.com/blog/best-digital-nomad-destinations-compared-2026): Side-by-side cost, internet, visa comparison
+- [Digital nomad taxes 2026](https://workinanywhere.com/blog/digital-nomad-taxes-2026): Questions to ask a cross-border tax specialist
+
+## City guides
+
+- [Latin America remote work guide](https://workinanywhere.com/blog/latin-america-remote-work-guide-2026): 8 cities with real budgets
+- [Costa Rica digital nomad guide](https://workinanywhere.com/blog/costa-rica-digital-nomad-guide-2026): Cost, visa, best towns
+- [Croatia digital nomad guide](https://workinanywhere.com/blog/croatia-digital-nomad-guide-2026): Cost of living, visa, best cities
+- [Bulgaria digital nomad guide](https://workinanywhere.com/blog/bulgaria-digital-nomad-guide-2026): EU residency, 10% flat tax
+- [New Zealand digital nomad guide](https://workinanywhere.com/blog/new-zealand-digital-nomad-guide-2026): Visa rules, cost of living
+- [Barcelona remote work guide](https://workinanywhere.com/blog/barcelona-remote-work-guide-2026): Cost, visa, Beckham Law
+
+## Jobs and money
+
+- [Remote jobs no experience 2026](https://workinanywhere.com/blog/remote-jobs-no-experience-2026): Entry level roles hiring now
+- [Flexible remote jobs 2026](https://workinanywhere.com/blog/flexible-remote-jobs-2026): Part-time and schedule-flexible roles
+- [Digital nomad budget breakdown](https://workinanywhere.com/blog/digital-nomad-budget-breakdown-2026): Three spending levels
+- [Real nomad budgets from community](https://workinanywhere.com/blog/real-nomad-budgets-from-community): 50 nomads, 12 countries
+- [Banking across borders: Wise vs Revolut](https://workinanywhere.com/blog/banking-across-borders-wise-revolut-2026): Fee comparison
+- [Travel insurance for digital nomads](https://workinanywhere.com/blog/travel-insurance-digital-nomads-2026): Plans compared
+
+## About this site
+
+Work Anywhere publishes curated, well-researched guides for people who want to build a life that is not tied to a single zip code. Every article is written from firsthand experience or community-sourced research. No AI-generated filler.

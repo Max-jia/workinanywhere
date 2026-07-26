@@ -20,6 +20,8 @@ const blog = defineCollection({
         .optional(),
       // 封面圖片（選填）
       heroImage: z.optional(image()),
+      // 是否有 FAQ 區塊（用於 FAQPage schema）
+      hasFAQ: z.boolean().optional(),
     }),
 });
 

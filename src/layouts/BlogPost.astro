@@ -1,33 +1,50 @@
 ---
-// 文章頁面佈局 — iamsteve 風格：只有標題+日期，極簡
+// 文章頁面佈局 — GEO 優化版：Person author + FAQPage schema + 更新日期顯示
 import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import RevealScript from '../components/RevealScript.astro';
+import { SITE_AUTHOR } from '../consts';
 
 type Props = CollectionEntry<'blog'>['data'];
-const { title, description, pubDate, updatedDate, category, heroImage } = Astro.props;
+const { title, description, pubDate, updatedDate, category, heroImage, hasFAQ } = Astro.props;
 
 const formattedDate = pubDate.toLocaleDateString('en-US', {
   year: 'numeric', month: 'long', day: 'numeric',
 });
 
 const postUrl = new URL(Astro.url.pathname, Astro.site).toString();
+const authorUrl = new URL('/about', Astro.site).toString();
 
+// Article schema — 使用 Person 而非 Organization
 const articleSchema = JSON.stringify({
   '@context': 'https://schema.org',
   '@type': 'Article',
+  '@id': `${postUrl}#article`,
   headline: title,
   description: description,
   datePublished: pubDate.toISOString(),
   dateModified: (updatedDate || pubDate).toISOString(),
   url: postUrl,
-  author: { '@type': 'Organization', name: 'Work Anywhere' },
-  publisher: { '@type': 'Organization', name: 'Work Anywhere', logo: { '@type': 'ImageObject', url: new URL('favicon.svg', Astro.site).toString() } },
+  author: {
+    '@type': 'Person',
+    '@id': `${authorUrl}#author`,
+    name: SITE_AUTHOR.name,
+    url: authorUrl,
+    description: SITE_AUTHOR.description,
+  },
+  publisher: {
+    '@type': 'Organization',
+    '@id': `${Astro.site.toString()}#org`,
+    name: 'Work Anywhere',
+    logo: { '@type': 'ImageObject', url: new URL('favicon.svg', Astro.site).toString() },
+  },
   mainEntityOfPage: { '@type': 'WebPage', '@id': postUrl },
+  isAccessibleForFree: true,
 });
 
+// BreadcrumbList schema
 const breadcrumbSchema = JSON.stringify({
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -37,6 +54,17 @@ const breadcrumbSchema = JSON.stringify({
     { '@type': 'ListItem', position: 3, name: title },
   ],
 });
+
+// FAQPage schema — 只在有 FAQ 區塊時輸出
+let faqSchema = '';
+if (hasFAQ) {
+  faqSchema = JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [],  // FAQ 具體條目由 GPT 從頁面內容中動態解析，不做靜態列舉
+    about: { '@type': 'Thing', name: title },
+  });
+}
 ---
 
 <html lang="en">
@@ -44,6 +72,7 @@ const breadcrumbSchema = JSON.stringify({
     <BaseHead title={title} description={description} />
     <script type="application/ld+json" set:html={articleSchema}></script>
     <script type="application/ld+json" set:html={breadcrumbSchema}></script>
+    {hasFAQ && <script type="application/ld+json" set:html={faqSchema}></script>}
     <style>
       .prose {
         max-width: var(--max-width);
@@ -65,10 +94,16 @@ const breadcrumbSchema = JSON.stringify({
       <article>
         <header class="article-header">
           <h1 class="article-title">{title}</h1>
-          <time class="article-date" datetime={pubDate.toISOString()}>
-            {formattedDate}
-            {updatedDate && ` (Updated ${updatedDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })})`}
-          </time>
+          <div class="article-meta">
+            <time class="article-date" datetime={pubDate.toISOString()}>
+              Published {formattedDate}
+            </time>
+            {updatedDate && updatedDate > pubDate && (
+              <span class="article-updated">
+                · Updated {updatedDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+              </span>
+            )}
+          </div>
         </header>
         <div class="prose">
           <slot />
@@ -113,9 +148,22 @@ const breadcrumbSchema = JSON.stringify({
     .article-title { color: var(--color-text-heading-dark); }
   }
 
+  .article-meta {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5em;
+    flex-wrap: wrap;
+  }
+
   .article-date {
     font-size: 0.9rem;
     color: var(--color-text-muted);
+  }
+
+  .article-updated {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    opacity: 0.8;
   }
 
   .back-link {

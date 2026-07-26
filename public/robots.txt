@@ -1,0 +1,48 @@
+# Allow AI search crawlers (these cite your content in answers)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Google crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
+# Bing crawlers
+User-agent: Bingbot
+Allow: /
+
+# Block AI training crawlers (citations OK, training not OK)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+# Block other potential training crawlers
+User-agent: Bytespider
+Disallow: /
+
+User-agent: omgili
+Disallow: /
+
+User-agent: ImagesiftBot
+Disallow: /
+
+Sitemap: https://workinanywhere.com/sitemap-index.xml

@@ -3,7 +3,6 @@ title: 'We Surveyed 50 Digital Nomads: Here Is What They Actually Spend (2026 Da
 description: 'Forget budget templates. We collected real monthly spending data from 50 nomads across 12 countries. The average was $1,736. The real story is what they all underestimated.'
 pubDate: 2026-07-09
 category: lifestyle
-heroImage: ../../assets/finance-workspace.jpg
 ---
 
 The internet is full of digital nomad budget guides. Most of them are theoretical: "Here is what you could spend if you lived in Chiang Mai and ate street food for every meal." Real people do not live like that. They order Grab when it rains. They go out for drinks with people they just met. Their laptop charger dies in a country where a replacement costs 40 percent more than at home.
@@ -14,7 +13,7 @@ In July 2026, we asked 50 digital nomads across 12 countries to share one month 
 
 ## Methodology
 
-We collected self-reported spending data from 50 digital nomads through a combination of direct interviews, verified expense tracking app exports, and community forum submissions. Respondents were split roughly evenly between freelancers (27) and full-time remote employees (23). Median reported income was $85,000. Reported income ranged from $28,000 to $210,000.
+We collected self-reported spending data from 50 digital nomads through a combination of direct interviews, verified expense tracking app exports, and community forum submissions. Respondents were split roughly evenly between freelancers (27) and full time remote employees (23). Median reported income was $85,000. Reported income ranged from $28,000 to $210,000.
 
 Countries covered: Thailand (Chiang Mai, Bangkok), Vietnam (Da Nang, Ho Chi Minh City), Mexico (Mexico City), Portugal (Lisbon), Colombia (Medellin), Indonesia (Bali, Canggu), Georgia (Tbilisi), Argentina (Buenos Aires), Spain (Barcelona), Japan (Tokyo), South Africa (Cape Town), and Malaysia (Kuala Lumpur).
 
@@ -22,25 +21,25 @@ This is not a representative statistical sample. It is a snapshot of what 50 rea
 
 ---
 
-## Key Findings at a Glance
+## Key findings at a glance
 
 **Average monthly spend:** $1,736
 **Median monthly spend:** $1,610
 **Range:** $720 (Da Nang, frugal) to $3,100 (Barcelona, social lifestyle)
 
-**50 percent of respondents said they were saving less than expected.** Only 11 percent reported saving more than they budgeted.
+50 percent of respondents said they were saving less than expected. Only 11 percent reported saving more than they budgeted.
 
-**The five biggest underestimated costs** (ranked by how often they came up):
+The five biggest underestimated costs (ranked by how often they came up):
 
-1. Transport — 68% of respondents spent more than budgeted (Grab, Uber, scooter repairs, airport transfers)
-2. Social spending — 62% overspent (group dinners, coworking drinks, weekend trips)
-3. Equipment and tech — 44% had an unplanned tech expense (chargers, cables, adapters, one laptop replacement)
-4. Visas and border runs — 38% underestimated (extension fees, border run flights, document processing)
-5. Healthcare — 32% had out-of-pocket costs beyond insurance (copays, dental, medications)
+1. Transport: 68% of respondents spent more than budgeted (Grab, Uber, scooter repairs, airport transfers)
+2. Social spending: 62% overspent (group dinners, coworking drinks, weekend trips)
+3. Equipment and tech: 44% had an unplanned tech expense (chargers, cables, adapters, one laptop replacement)
+4. Visas and border runs: 38% underestimated (extension fees, border run flights, document processing)
+5. Healthcare: 32% had out of pocket costs beyond insurance (copays, dental, medications)
 
 ---
 
-## The Budget Spread: 12 Countries, Real Numbers
+## The budget spread: 12 countries, real numbers
 
 Each row is one person's actual spending for a single month in mid-2026.
 
@@ -66,14 +65,14 @@ Each row is one person's actual spending for a single month in mid-2026.
 
 ---
 
-## Category Breakdown: Where the Money Actually Goes
+## Category breakdown: where the money actually goes
 
-### Rent and Housing
+### Rent and housing
 
 Average: $598 (34% of monthly spend)
 Range: $300 (Da Nang studio) to $1,400 (Lisbon one-bedroom)
 
-The single biggest line item for every respondent. Southeast Asian cities clustered between $300 and $500 a month. European cities started at $900 and went up from there. Several respondents noted that their rent was lower than expected because they booked monthly stays on Airbnb or through local Facebook groups rather than short-term tourist rates.
+The single biggest line item for every respondent. Southeast Asian cities clustered between $300 and $500 a month. European cities started at $900 and went up from there. Several respondents noted that their rent was lower than expected because they booked monthly stays on Airbnb or through local Facebook groups rather than short term tourist rates.
 
 One respondent in Ho Chi Minh City paid $900 for a luxury serviced apartment, the highest in the dataset outside Europe. "I knowingly splurge here because everything else costs so little. My total spend is still less than my rent was in San Francisco."
 
@@ -93,9 +92,9 @@ Range: $40 (walking city, Chiang Mai) to $340 (Uber-dependent, Barcelona)
 
 Transport was the single most underestimated category. 68 percent of respondents spent more than they budgeted. In cities with limited public transit like Cape Town and Bali, transport costs rivaled food. In walkable cities like Chiang Mai and Medellin, they were negligible.
 
-Scooter owners in Bali and Chiang Mai reported $60 to $190 a month in rental, fuel, and maintenance. Several noted that scooter repairs added up — a new tire, a brake replacement, a mirror knocked off in a parking lot.
+Scooter owners in Bali and Chiang Mai reported $60 to $190 a month in rental, fuel, and maintenance. Several noted that scooter repairs added up: a new tire, a brake replacement, a mirror knocked off in a parking lot.
 
-### Coworking and Workspace
+### Coworking and workspace
 
 Average: $126 (7% of monthly spend)
 Range: $0 (worked from apartment) to $310 (Canggu cafes daily)
@@ -104,30 +103,30 @@ About 40 percent of respondents used a coworking space. The rest worked from the
 
 The cafe strategy cost more than the coworking strategy. Several respondents pointed this out with some embarrassment.
 
-### Social and Entertainment
+### Social and entertainment
 
 Average: $194 (11% of monthly spend)
 Range: $40 (introvert, Da Nang) to $340 (social nomad, Barcelona)
 
 Social spending was not optional for most respondents. It was the cost of building community in a new place. Weekends away, group dinners, drinks after coworking, the "one more" at a bar with people you might never see again. The introverts spent less. The extroverts spent more. Nobody spent zero.
 
-### Visas and Admin
+### Visas and admin
 
 Average: $93 (5% of monthly spend)
-Range: $0 (long-term visa holders) to $310 (frequent border runners)
+Range: $0 (long term visa holders) to $310 (frequent border runners)
 
 The cost of staying legally. Visa extension fees, border run flights, the night of accommodation booked just to get a passport stamp, document processing, and the occasional expedited processing fee. This category varied wildly depending on where the respondent was and what visa they were on.
 
-### Health and Insurance
+### Health and insurance
 
 Average: $145 (8% of monthly spend)
 Range: $56 (SafetyWing only, minimal usage) to $420 (Genki plus dental visit plus medications)
 
-Insurance premiums made up most of this category. Out-of-pocket costs varied. Several respondents had dental emergencies. A root canal in Thailand costs $300 instead of $1,500 at home, but $300 is still $300 you were not planning to spend.
+Insurance premiums made up most of this category. Out of pocket costs varied. Several respondents had dental emergencies. A root canal in Thailand costs $300 instead of $1,500 at home, but $300 is still $300 you were not planning to spend.
 
 ---
 
-## The Savings Gap
+## The savings gap
 
 The median income in our sample was $85,000. The average monthly spend was $1,736. On paper, these people should be saving a lot of money.
 
@@ -139,7 +138,7 @@ The budget templates on the internet tell you what you could spend. Our data sho
 
 ---
 
-## The Verdict in 5 Sentences
+## The verdict in 5 sentences
 
 1. Southeast Asia is still the best value on Earth for remote workers. You can live well on $800 to $1,200 a month.
 2. Latin America costs more than you think. Budget $1,300 to $1,800 unless you are actively living frugally.

@@ -1,12 +1,25 @@
 ---
 // 關於頁面 — 介紹這個網站和經營者
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE_AUTHOR } from '../consts';
+
+const authorUrl = new URL(Astro.url.pathname, Astro.site).toString();
+const authorSchema = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  '@id': `${authorUrl}#author`,
+  name: SITE_AUTHOR.name,
+  url: authorUrl,
+  description: SITE_AUTHOR.description,
+  sameAs: SITE_AUTHOR.sameAs,
+});
 ---
 
 <BaseLayout
   title="About — Work Anywhere"
   description="Learn about Work Anywhere — your guide to remote work, digital nomad lifestyle, and location-independent living."
 >
+  <script type="application/ld+json" set:html={authorSchema}></script>
   <main>
     <h1>About Work Anywhere</h1>
 

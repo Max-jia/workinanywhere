@@ -4,6 +4,14 @@ export const SITE_TITLE = 'Work Anywhere';
 export const SITE_DESCRIPTION =
   'Curated guides on the best remote work cities, tools, jobs, and lifestyle tips — for digital nomads and anyone who wants to work from anywhere.';
 
+// 作者資訊（用於 Schema.org Person 和文章作者標記）
+export const SITE_AUTHOR = {
+  name: 'Work Anywhere Team',
+  url: 'https://workinanywhere.com/about',
+  description: 'A team of remote workers and digital nomads who test destinations, tools, and strategies firsthand.',
+  sameAs: ['https://workinanywhere.com/about'],
+};
+
 // 導覽列
 export const NAV_LINKS = [
   { href: '/', label: 'Home' },
